@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="arg_res_0x7f1301c9">கூகுள் பிளேயில் மதிப்பிடுக்</string>
+    <string name="arg_res_0x7f1301ca">மதிப்பிடுக</string>
+    <string name="arg_res_0x7f1301cb">எங்களுக்கு மதிப்பீடு வழங்கினால் நன்றியுடையவர்களாய் இருப்போம்.</string>
+    <string name="arg_res_0x7f1301cc">உங்கள் ஆதரவுக்கு நன்றி!</string>
+    <string name="arg_res_0x7f1301cd">உங்கள் மதிப்புரை மற்ற பயனர்களுக்கு பலனுள்ளதாயிருக்கும்.\n\nதயவுசெய்து உங்கள் மதிப்புரையை கூகுள் பிளேயில் விட்டுச் செல்லுங்கள்.</string>
+    <string name="arg_res_0x7f1301ce">எங்களுக்குக் கிடைத்ததில் சிறந்தது இத</string>
+    <string name="arg_res_0x7f1301cf">உங்கள் பின்னூட்டத்தை வரவேற்கிறோம்.</string>
+    <string name="arg_res_0x7f1301d0">மிக்க நன்றி!</string>
+    <string name="arg_res_0x7f1301d1">இதை விரும்புகிறேன்</string>
+    <string name="arg_res_0x7f1301d2">ஓ, வருந்துகிறோம்…</string>
+    <string name="arg_res_0x7f1301d5">உங்கள் மதிப்புரைக்கு நன்றி.</string>
+    <string name="arg_res_0x7f1301d6">உங்கள் ஆதரவே எங்களது மிகப்பெரிய ஊக்க சக்தி!</string>
+</resources>

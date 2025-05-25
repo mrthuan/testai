@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/widget_paddingHorizontal" android:paddingRight="@dimen/widget_paddingHorizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/widget_paddingHorizontal">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50"/>
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_100_black_white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:background="@drawable/bg_widget_item_bg" android:paddingTop="@dimen/dp_22" android:layout_width="@dimen/dp_134" android:layout_height="@dimen/dp_127" android:text="@string/arg_res_0x7f13019b" android:drawablePadding="@dimen/dp_10" app:drawableTopCompat="@drawable/ic_widget_single_img2pdf" app:layout_constraintEnd_toEndOf="@+id/widget_large_img2pdf" app:layout_constraintStart_toStartOf="@+id/widget_large_img2pdf" app:layout_constraintTop_toTopOf="@+id/widget_large_img2pdf" style="@style/TextViewFont_RobotoMedium"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="90"/>
+</LinearLayout>

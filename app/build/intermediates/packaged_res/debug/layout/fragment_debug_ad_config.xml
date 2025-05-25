@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/DebugContainer">
+            <Button android:id="@+id/reset_open_preview_btn" android:text="重置是否进入过预览页，点击之后重启程序加载扫描Banner" style="@style/DebugButton"/>
+            <Button android:id="@+id/admob_test_btn" android:text="进入Admob测试套件" style="@style/DebugButton"/>
+            <Button android:id="@+id/change_ad_config_btn" android:text="调整广告源" style="@style/DebugButton"/>
+            <Button android:id="@+id/load_ad_btn" android:text="加载广告" style="@style/DebugButton"/>
+            <RadioGroup android:orientation="vertical" android:id="@+id/preInstall_ab" android:layout_height="wrap_content" style="@style/DebugCheckbox">
+                <RadioButton android:id="@+id/preInstall_planDef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预装首页扫描Banner使用默认方案" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/preInstall_planA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预装首页扫描Banner使用A方案" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/preInstall_planB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预装首页扫描Banner使用B方案" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/preInstall_planC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预装首页扫描Banner使用C方案" android:layout_weight="1"/>
+            </RadioGroup>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/splash_full_ab" style="@style/DebugCheckbox">
+                <RadioButton android:id="@+id/splash_full_planA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="桌面Splash方案A" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/splash_full_planB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="桌面Splash方案B" android:layout_weight="1"/>
+            </RadioGroup>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="修改点击文件插屏Loading时间(ms)" style="@style/DebugText"/>
+                <EditText android:id="@+id/item_click_loading_duration_et" android:hint="默认1500ms" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/item_click_loading_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="修改退出预览插屏Loading时间(ms)" style="@style/DebugText"/>
+                <EditText android:id="@+id/preview_loading_duration_et" android:hint="默认800ms" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/preview_loading_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="首页扫描等待最短时长(ms)" style="@style/DebugText"/>
+                <TextView android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:text="(首页扫描时间设置后,下次扫描会按照首次来)" android:paddingHorizontal="@dimen/dp_16"/>
+                <EditText android:id="@+id/home_scan_min_duration_et" android:hint="默认5000ms" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/home_scan_min_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="买量全屏广告展示间隔时间(s),默认30s" style="@style/DebugText"/>
+                <EditText android:id="@+id/full_interval_time_et" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/full_interval_time_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="自然量全屏广告展示间隔时间(s),默认60s" style="@style/DebugText"/>
+                <EditText android:id="@+id/organic_full_interval_time_et" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/organic_full_interval_time_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="插屏加载成功后过期时间(min)" style="@style/DebugText"/>
+                <EditText android:id="@+id/ad_load_expired_time_et" android:hint="默认30min" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/ad_load_expired_time_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="广告请求过期时间(min)" style="@style/DebugText"/>
+                <EditText android:id="@+id/ad_request_expired_time_et" android:hint="默认30min" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/ad_request_expired_time_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="OpenAd加载成功后过期时间(min)" style="@style/DebugText"/>
+                <EditText android:id="@+id/openAd_expired_time_et" android:hint="默认240min" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/openAd_expired_time_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="扫描Banner自动刷新时间(ms)" style="@style/DebugText"/>
+                <EditText android:id="@+id/scan_banner_refresh_interval_et" android:hint="默认60s" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/scan_banner_refresh_interval_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="首页底部Banner自动刷新时间(ms)" style="@style/DebugText"/>
+                <EditText android:id="@+id/home_bottom_banner_refresh_interval_et" android:hint="默认60s" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/home_bottom_banner_refresh_interval_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="预览页底部Banner自动刷新时间(ms)" style="@style/DebugText"/>
+                <EditText android:id="@+id/preview_bottom_banner_refresh_interval_et" android:hint="默认60s" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/preview_bottom_banner_refresh_interval_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+            <LinearLayout style="@style/DebugFrame">
+                <TextView android:text="列表Banner自动刷新时间(ms)" style="@style/DebugText"/>
+                <EditText android:id="@+id/list_banner_refresh_interval_et" android:hint="默认60s" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+                <Button android:id="@+id/list_banner_refresh_interval_ok_btn" android:text="OK" style="@style/DebugButton"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_20" android:text="广告开关" style="@style/DebugText"/>
+        <LinearLayout style="@style/DebugContainer">
+            <CheckBox android:id="@+id/user_guide_native_switch" android:text="引导页NativeCard" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/user_guide_full_switch" android:text="引导页插屏" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/pre_install_native_open_ad_switch" android:text="预装用户NativeOpenAd" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/languageChooseNativeConfigSwitch" android:text="语言选择页NativeCard使用新方案" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/splash_light_switch" android:text="闪电开关" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/scanner_show_switch" android:text="Scanner内推是否展示" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/scanner_show_banner_switch" android:text="Scanner内推广告是否显示banner样式" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/home_scanner_banner_white_switch" android:text="scanBanner背景是否为白色" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/home_banner_white_switch" android:text="NativeBanner背景是否为白色" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/item_click_loading_switch" android:text="点击文件插屏Loading" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/preview_loading_switch" android:text="预览退出插屏Loading" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/convertBannerSwitch" android:text="转换页底部Banner" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/home_scanner_banner_switch" android:text="首页扫描Banner" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/home_list_banner_switch" android:text="展示首页列表NativeBanner" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/third_openAd_switch" android:text="展示三方分享openAd广告" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/home_banner_switch" android:text="展示首页banner广告" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/preview_banner_switch" android:text="展示预览页banner广告" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/item_click_full_switch" android:text="展示文件点击广告" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/preview_full_switch" android:text="展示预览页面返回全屏广告" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/convert_full_switch" android:text="展示转换页插屏广告" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/language_choose_switch" android:text="展示语言选择页广告" style="@style/DebugCheckbox"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

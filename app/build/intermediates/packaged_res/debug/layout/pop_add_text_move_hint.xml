@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_add_text_move_tip" android:background="@drawable/bg_add_text_move_guide" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_100_white_black" android:gravity="center_vertical" android:id="@+id/tv_add_text_move_tip" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f13059a" style="@style/TextViewFont_RobotoBold"/>
+</LinearLayout>

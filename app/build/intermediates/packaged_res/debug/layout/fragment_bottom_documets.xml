@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/colorPrimaryContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/ll_tops_ads" android:background="@color/colorBannerAdBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/top_ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/smartRefreshLayout" android:background="@color/colorPrimaryContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:srlHeaderMaxDragRate="3.5" app:srlHeaderTriggerRate="2" app:srlPrimaryColor="@color/colorPrimaryContainer">
+        <pdf.pdfreader.viewer.editor.free.ui.myview.RefreshHeader android:id="@+id/refresh_header" android:layout_width="match_parent" android:layout_height="@dimen/dp_78" app:srlDrawableProgressSize="25dp" app:srlPrimaryColor="@color/colorPrimaryContainer"/>
+        <pdf.pdfreader.viewer.editor.free.ui.myview.ReaderViewPager android:id="@+id/documentViewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

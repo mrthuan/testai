@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pdf.pdfreader.viewer.editor.free.ui.widget.MagnifierContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:background="@color/colorPrimary" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/pdf_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/splash_root" android:background="@color/colorPrimaryContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/full_holder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</pdf.pdfreader.viewer.editor.free.ui.widget.MagnifierContainer>

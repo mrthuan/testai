@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/loadingRoot" android:background="@color/colorOnPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/loadingActionBar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/loadingBack" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_4" app:layout_constraintBottom_toBottomOf="@+id/actionBarView" app:layout_constraintStart_toStartOf="@+id/actionBarView" app:layout_constraintTop_toTopOf="@+id/actionBarView" app:srcCompat="@drawable/ic_home_arrow" app:tint="@color/colorSurface"/>
+    </LinearLayout>
+    <View android:background="@color/colorPrimaryDim" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_below="@+id/loadingActionBar"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/loadingLottie" android:layout_width="60dp" android:layout_height="60dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_scale="0.33"/>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/colorSurface" android:id="@+id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/arg_res_0x7f1303a6" style="@style/TextViewFont_RobotoRegular"/>
+    </LinearLayout>
+</RelativeLayout>

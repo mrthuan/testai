@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" android:description="@string/arg_res_0x7f130071" android:minWidth="@dimen/dp_130" android:minHeight="@dimen/dp_110" android:updatePeriodMillis="86400000" android:initialLayout="@layout/app_widget_scan2pdf_large" android:previewImage="@drawable/app_widget_scan2pdf_large_preview" android:resizeMode="vertical|horizontal" android:initialKeyguardLayout="@layout/app_widget_scan2pdf_large" android:widgetCategory="home_screen"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dp_118">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_118">
+        <Button android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/ad_action_button" android:background="@drawable/shape_round_8_orange" android:layout_width="match_parent" android:layout_height="@dimen/dp_42" android:layout_marginTop="@dimen/dp_12" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" android:outlineProvider="none" style="@style/TextViewFont_RobotoBold"/>
+        <RelativeLayout android:id="@+id/native_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+            <FrameLayout android:id="@+id/ad_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/ad_icon_imageview" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:scaleType="fitXY"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ad_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/dp_12" android:layout_toEndOf="@+id/ad_icon_layout">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/colorAdPrimaryText" android:ellipsize="end" android:id="@+id/ad_title_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:textAlignment="viewStart" style="@style/TextViewFont_RobotoRegular"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/colorAdPrimaryText" android:ellipsize="end" android:id="@+id/ad_describe_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:maxLines="2" android:includeFontPadding="false" android:textAlignment="viewStart" style="@style/TextViewFont_RobotoRegular"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ad_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_native_card_ad" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_alignParentStart="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ad_choices_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

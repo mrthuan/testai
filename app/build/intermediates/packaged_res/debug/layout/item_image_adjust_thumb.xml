@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_50" android:layout_marginStart="@dimen/dp_6">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.5dp" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="0dp">
+        <FrameLayout android:id="@+id/content_fl" android:background="@color/color_100_f3f3f5_1d1f22" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/picture_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:id="@+id/content_mask_view" android:background="@drawable/shape_image_adjust_thumb_bg_normal" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:indeterminateOnly="true" android:indeterminateTint="@color/colorThumbProgressBg"/>
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/pdf_bottom_1" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:elevation="@dimen/dp_10">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/paint_paint_1" android:background="@drawable/bg_paint_1" android:visibility="gone" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_14">
+        <View android:layout_gravity="center" android:id="@+id/paint_paint_2" android:background="@drawable/bg_paint_2" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/xp_paint_1" android:background="@drawable/bg_paint_1" android:visibility="gone" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_56">
+        <View android:layout_gravity="center" android:id="@+id/xp_paint_2" android:background="@drawable/bg_paint_2" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/pdf_bottom_draw" android:background="@drawable/bg_corner8_white_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <HorizontalScrollView android:id="@+id/pdf_bottom_draw_p_color" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/paint_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:paddingStart="@dimen/dp_2" android:paddingEnd="@dimen/dp_22">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_1" android:background="@drawable/bg_color_select" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_1" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/color_2" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_2" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/color_3" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_3" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_4" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_4" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_5" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_5" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_6" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_6" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_7" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_7" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_8" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_8" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_9" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_9" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_10" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_10" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_11" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_11" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_12" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_12" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_13" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_13" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_14" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_14" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/color_15" android:background="@drawable/bg_color_no_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20">
+                    <View android:layout_gravity="center" android:background="@drawable/bg_color_15" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rl_paint_xp" android:paddingTop="@dimen/dp_19" android:paddingBottom="@dimen/pdf_draw_padding_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_12">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/colorSurfaceFix" android:id="@+id/tv_seerbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_12" style="@style/TextViewFont_RobotoMedium"/>
+                <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/paint_seekBar" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/seekbar_height" android:progressDrawable="@drawable/seek_progress" android:minHeight="@dimen/seekbar_height" android:thumb="@drawable/seek_thumb" android:thumbOffset="0dp" android:layout_centerVertical="true" android:paddingStart="3dp" android:paddingEnd="3dp" android:layout_toEndOf="@+id/tv_seerbar" android:splitTrack="false"/>
+                <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/xp_seekBar" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/seekbar_height" android:progress="50" android:progressDrawable="@drawable/seek_progress" android:minHeight="@dimen/seekbar_height" android:thumb="@drawable/seek_thumb" android:thumbOffset="0dp" android:layout_centerVertical="true" android:paddingStart="3dp" android:paddingEnd="3dp" android:layout_toEndOf="@+id/tv_seerbar" android:splitTrack="false"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/paint" android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_12">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_brush" android:scaleX="@integer/scale_x"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/xp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_12">
+                <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_eraser" android:scaleX="@integer/scale_x"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#339798a2" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+    </LinearLayout>
+</LinearLayout>

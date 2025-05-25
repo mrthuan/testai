@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/page_preview_ll_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@+id/page_preview_iv_cover" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="fitCenter" android:minWidth="@dimen/dp_40" android:minHeight="@dimen/dp_40" android:layout_weight="1"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/color_777777_9798A2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="29.70 cm x 42.00 cm" style="@style/TextViewFont_RobotoRegular"/>
+</LinearLayout>

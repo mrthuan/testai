@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/black_item" android:title="黑夜模式"/>
+    <item android:id="@+id/jump_item" android:title="跳页"/>
+</menu>

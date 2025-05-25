@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/replace_root" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_50" android:layout_marginStart="@dimen/dp_6"/>

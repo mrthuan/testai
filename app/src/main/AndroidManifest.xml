@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="98" android:versionName="1.8.1" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="pdf.pdfreader.viewer.editor.free" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="34"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <queries>
+        <package android:name="com.google.android.gm"/>
+        <package android:name="com.android.email"/>
+        <package android:name="pdf.pdfreader.viewer.editor.free"/>
+        <package android:name="pdfscanner.scan.pdf.scanner.free"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="com.facebook.orca"/>
+        <intent>
+            <action android:name="androidx.browser.customtabs.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE"/>
+    <permission android:name="pdf.pdfreader.viewer.editor.free.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="pdf.pdfreader.viewer.editor.free.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:theme="@style/AppTheme" android:label="@string/arg_res_0x7f13036c" android:icon="@mipmap/ic_launcher" android:name="pdf.pdfreader.viewer.editor.free.ReaderPdfApplication" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <meta-data android:name="android.vivo_nightmode_support" android:value="false"/>
+        <activity android:theme="@style/TransparentFullScreenTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.SettingRequestPermissionActivity" android:exported="false" android:launchMode="singleInstance" android:screenOrientation="portrait" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/TransparentFullScreenTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ClearDefaultReaderStep2Activity" android:exported="false" android:launchMode="singleInstance" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/TransparentTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.SettingOpenWithGuideActivity" android:exported="false" android:launchMode="singleInstance" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/TransparentFullScreenTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.SettingStoragePermissionGuideActivity" android:exported="false" android:launchMode="singleInstance" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/TransparentTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.SettingOpenWithGuideABActivity" android:exported="false" android:launchMode="singleInstance" android:autoRemoveFromRecents="true"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ReaderFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.SettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.tools.PDFChooseActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.tools.SearchPDFWhenChooseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.VerifySoActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ReaderMainLaunchActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ReaderHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ReaderSearchActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/AppTheme" android:label="@string/arg_res_0x7f13033b" android:name="pdf.pdfreader.viewer.editor.free.pdfview.ReaderPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.ReaderAIPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.pdf2word.ui.activity.ReaderConvertPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.pdf2image.ui.Pdf2ImagePicPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.pagemanager.ui.activity.PDFPageManagerActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.pdf2image.ui.Pdf2ImageBigPicPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.pdf2image.ui.Pdf2ImageLongPicPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.OfficeAIReaderActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.AISelfInfoActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.AIExperienceActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.AIHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.AIHistoryActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.AIHistoryDetailActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.office.OfficeReaderActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ReaderSplitPdfActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ReaderMergeChooserActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.LanguageChooseActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.ReaderMergePdfActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.RecentAddedActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.scan.ui.ScanSettingActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.scan.ui.CameraActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.single_choose.SingleCameraActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.scan.ui.ImageAdjustActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/TransparentActivityTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.scan.ui.TranslucentImageAdjustActivity" android:launchMode="singleTask" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ocr.ui.OCRSelectPDFPageActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ocr.ui.OCRPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ocr.ui.OCRResultActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/PrivacyPolicyTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.PolicyOverloadActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ui.convert.ReaderImg2PDFConvertActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/PrivacyPolicyTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.TermsUseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ui.convert.ReaderImg2PDFChooseActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ui.act.single_choose.SingleImageChooseActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ui.convert.ReaderImgPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ui.convert.ReaderSelectImagePreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ui.act.single_choose.SingleSelectImagePreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity-alias android:label="@string/arg_res_0x7f13036c" android:icon="@mipmap/ic_launcher" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity10" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/webp"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/vnd.wap.wbmp"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/webp"/>
+                <data android:mimeType="image/png"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/vnd.wap.wbmp"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/webp"/>
+                <data android:mimeType="image/png"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="View PDF" android:icon="@mipmap/ic_launcher" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity9" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="View PDF" android:icon="@mipmap/ic_launcher" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity8" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="View PDF" android:icon="@mipmap/ic_launcher" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity7" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="@string/arg_res_0x7f13036c" android:icon="@mipmap/ic_launcher" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity6" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="Excel Reader" android:icon="@mipmap/ic_launcher_xls_square" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity5" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_xls_circle">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="PPT Reader" android:icon="@mipmap/ic_launcher_ppt_square" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity4" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_ppt_circle">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="Word Reader" android:icon="@mipmap/ic_launcher_doc_square" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity3" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_doc_circle">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label=" PDF Reader" android:icon="@mipmap/ic_launcher_pdfreader_space_square" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity2" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_pdfreader_space_circle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="All Reader" android:icon="@mipmap/ic_launcher_allreader_square" android:name="pdf.pdfreader.viewer.editor.free.ReaderWelcomeActivity1" android:enabled="true" android:exported="true" android:description="@string/arg_res_0x7f1300ec" android:targetActivity="pdf.pdfreader.viewer.editor.free.ReaderSplashActivity" android:autoRemoveFromRecents="true" android:roundIcon="@mipmap/ic_launcher_allreader_circle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\.pdf"/>
+                <data android:pathPattern=".*\\..*\\..*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-word"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.document.macroEnabled.12"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-word.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.addin.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-excel.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.template"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.presentation.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.slideshow"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroenabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.slideshow.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroEnabled.12"/>
+                <data android:mimeType="application/vnd.ms-powerpoint.template.macroenabled.12"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:theme="@style/Theme.App.Starting" android:name="pdf.pdfreader.viewer.editor.free.ReaderLauncherBridgeActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="reader" android:host="industries.deepthought" android:pathPrefix="/launcher"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pdf.pdfreader.viewer.editor.free.ReaderDeepLinkActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="pdfreader.deepthought.industries" android:pathPattern="/happyNewYear2025"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.feature.debug.ReaderDebugActivity" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetPDFTools1" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_pdf_tools_01"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetPDFTools2" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_pdf_tools_02"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetImg2PDFLarge" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_img2pdf_large"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetScan2PDFLarge" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_scan2pdf_large"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetImg2PDFSmall" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_img2pdf_small"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetScan2PDFSmall" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_scan2pdf_small"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetEdit2PDFSmall" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_edit2pdf_small"/>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.APPWidgetEdit2PDFLarge" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_edit2pdf_large"/>
+        </receiver>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.widget.act.ReaderEditChooserActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.widget.act.ReaderEditSearchActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.billing.ui.SubscriptionDarkTestFActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.billing.ui.SubscriptionAIActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.billing.ui.SubscriptionAIJ1Activity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.billing.ui.SubscriptionDarkTestJActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.billing.ui.SubscriptionBlackFridayActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.guide.ui.UserGuideActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.office.Word2PDFConvertActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.AIChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.ai.ui.activity.ImageMindPreviewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/TransparentActivityTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.activity.HomeScreenPermissionGuideActivity" android:exported="false" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:icon="@drawable/icon_translucent" android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.activity.ShortcutProxyActivity" android:exported="true" android:taskAffinity=":proxy" android:excludeFromRecents="true" android:launchMode="singleInstance" android:noHistory="true" android:roundIcon="@drawable/icon_translucent"/>
+        <activity android:theme="@style/TransparentFullScreenTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.app_widget.ui.activity.WidgetLandingActivity" android:exported="true" android:taskAffinity=":proxy" android:excludeFromRecents="true" android:launchMode="singleInstance" android:noHistory="true"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.feature.pagemanager.ui.activity.PDFCreatorActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="pdf.pdfreader.viewer.editor.free.ui.act.PreInstallOpenAdActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.broadcast.BootCompletedReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="pdf.pdfreader.viewer.editor.free.broadcast.TimeReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="pdf.pdfreader.viewer.editor.free.notification.fcm.LanguageRecallFCMService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/arg_res_0x7f130134"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/arg_res_0x7f130135"/>
+        <activity android:label="@string/arg_res_0x7f1304bb" android:name="lib.zj.office.officereader.AppActivity" android:configChanges="orientation|keyboardHidden"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="20202"/>
+        </service>
+        <service android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" android:enabled="false" android:exported="false" android:foregroundServiceType="dataSync"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="industries.deepthought.core.activity.NotificationActivity" android:launchMode="singleTop"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-1823908540176334~2363945517"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.facebook.ads.AudienceNetworkActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <provider android:name="com.facebook.ads.AudienceNetworkContentProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.AudienceNetworkContentProvider"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.inmobi.ads.rendering.InMobiAdActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard|locale" android:hardwareAccelerated="true"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="7.0.0"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:exported="false" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:exported="false" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.mobileadsinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.google.android.gms.ads.OutOfContextTestingActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:exported="false" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTask"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.androidx-startup">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:theme="@style/tt_landing_page" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_landing_page" android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_landing_page" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:launchMode="standard"/>
+        <activity android:theme="@style/tt_privacy_landing_page" android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+        <activity android:theme="@style/tt_app_open_ad_no_animation" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_new" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_new" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_new" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_new" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_interaction" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_interaction" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/tt_full_screen_new" android:name="com.bytedance.sdk.openadsdk.activity.TTAdActivity" android:launchMode="standard" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/policy_theme" android:name="industries.deepthought.core.activity.PolicyActivity" android:screenOrientation="portrait"/>
+        <service android:name="industries.deepthought.core.service.DownloadService" android:exported="false"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="pdf.pdfreader.viewer.editor.free.com.squareup.picasso"/>
+        <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+    </application>
+</manifest>

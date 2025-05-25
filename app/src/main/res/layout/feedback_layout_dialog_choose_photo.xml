@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/feedback_shape_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/feedbackDialogTextColor" android:gravity="center" android:id="@+id/tv_capture" android:background="@drawable/bg_corner8_white_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:text="@string/arg_res_0x7f13013f" android:fontFamily="@string/arg_res_0x7f130144"/>
+        <View android:background="@color/colorFeedbackTakePicLine" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textColor="@color/feedbackDialogTextColor" android:gravity="center" android:id="@+id/tv_gallery" android:background="@drawable/bg_corner8_white_bottom" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:text="@string/arg_res_0x7f13013c" android:fontFamily="@string/arg_res_0x7f130144"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8"/>
+    <TextView android:textColor="@color/feedbackDialogTextColor" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_cancel" android:background="@drawable/bg_corner8_white" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_18" android:text="@string/arg_res_0x7f13013d" android:fontFamily="@string/arg_res_0x7f130144"/>
+</LinearLayout>

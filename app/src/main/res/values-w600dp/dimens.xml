@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_button_margin">12dp</dimen>
+    <dimen name="pdf_draw_padding_bottom">@dimen/dp_22</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="@color/colorPrimaryOld" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/colorPrimaryDim" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/bg_add_text_change_handler" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_7"/>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_100_black_white" android:id="@+id/sign_color_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/arg_res_0x7f1300b4" android:fontFamily="@font/roboto_medium" android:layout_marginStart="@dimen/dp_18"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/sign_color_rv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:layout_marginBottom="@dimen/dp_24" android:layout_marginStart="@dimen/dp_10"/>
+</LinearLayout>

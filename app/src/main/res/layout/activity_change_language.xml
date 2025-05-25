@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/colorOnPrimary" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/contentRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/nativeBannerContainer" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_12" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_18" android:textColor="@color/colorSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f1301c2" android:includeFontPadding="false" style="@style/TextViewFont_RobotoBold"/>
+                <android.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivChangeLangOK" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_language_done" app:tint="@color/colorSurface"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvChangLang" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_18" android:layout_weight="1"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/nativeCardContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_16">
+                <ScrollView android:id="@+id/nativeCardScrollView" android:scrollbars="none" android:layout_width="0dp" android:layout_height="wrap_content" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+                    <FrameLayout android:id="@+id/nativeCardLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </ScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/nativeBannerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@+id/nativeBannerLayout" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_max="@dimen/dp_73" app:layout_constraintStart_toStartOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@+id/guideContainer" android:paddingTop="@dimen/dp_12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dp_11" android:paddingEnd="@dimen/dp_11" android:layout_alignParentEnd="true">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/guideButton" android:background="@drawable/bg_guide_language_button" android:layout_width="@dimen/dp_42" android:layout_height="@dimen/dp_32" android:scaleType="fitCenter" android:paddingStart="@dimen/dp_4" android:paddingEnd="@dimen/dp_4" app:srcCompat="@drawable/ic_language_done" app:tint="@color/colorSurface"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/guideText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                <View android:layout_gravity="end" android:background="@drawable/ic_lang_guide_arrow" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_16"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_15" android:textColor="@color/white" android:background="@drawable/shape_lang_guide_text_bg" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-0.5dp" android:maxWidth="@dimen/dp_240" android:text="@string/arg_res_0x7f130318" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" style="@style/TextViewFont_RobotoBold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/splash_root" android:background="@color/colorPrimaryContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

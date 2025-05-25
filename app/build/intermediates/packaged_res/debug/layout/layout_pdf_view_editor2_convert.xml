@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/top_ll" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/viewStatusBarSpace" android:layout_width="match_parent" android:layout_height="@dimen/dp_30"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/actionBarView" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:layout_below="@+id/viewStatusBarSpace">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/backIv" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_4" app:layout_constraintBottom_toBottomOf="@+id/actionBarView" app:layout_constraintStart_toStartOf="@+id/actionBarView" app:layout_constraintTop_toTopOf="@+id/actionBarView" app:srcCompat="@drawable/ic_home_arrow" app:tint="@color/colorSurface"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_16" android:textColor="@color/color_100_black_white" android:ellipsize="middle" android:id="@+id/fileNameTv" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/dp_44" app:layout_constraintBottom_toBottomOf="@+id/backIv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/backIv" app:layout_constraintTop_toTopOf="@+id/backIv" style="@style/TextViewFont_RobotoMedium"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:id="@+id/top_line" android:background="@color/colorPrimaryDim" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/actionBarView"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_ll">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/rootView" android:background="@color/colorOnPrimary" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <pdf.pdfreader.viewer.editor.free.ui.myview.InterceptTouchFrameLayout android:id="@+id/intercept_fl" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <pdf.pdfreader.viewer.editor.free.ui.widget.PdfReaderViewContainer android:id="@+id/pdfView" android:background="@color/colorOnPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:id="@+id/reflow_load_fl" android:background="@drawable/bg_preview_reflow_load" android:visibility="gone" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_86" android:layout_centerInParent="true">
+                        <pdf.pdfreader.viewer.editor.free.ui.widget.ProgressView android:layout_gravity="center" android:id="@+id/reflow_zoom_progress" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" app:img="@drawable/ic_reflow_scale_loading"/>
+                        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/reflow_zoom_tv_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"/>
+                    </FrameLayout>
+                </pdf.pdfreader.viewer.editor.free.ui.widget.PdfReaderViewContainer>
+            </pdf.pdfreader.viewer.editor.free.ui.myview.InterceptTouchFrameLayout>
+            <FrameLayout android:id="@+id/bgPageToast" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_42" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pageGotoLl" android:background="@drawable/bg_office_page_toast" android:layout_width="wrap_content" android:layout_height="@dimen/dp_26" android:paddingStart="8dp" android:paddingEnd="8dp">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@+id/currentPageTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/TextViewFont_RobotoMedium"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@+id/pageSlash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:includeFontPadding="false" style="@style/TextViewFont_RobotoMedium"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@+id/totalPageTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/TextViewFont_RobotoMedium"/>
+                </LinearLayout>
+            </FrameLayout>
+            <pdf.pdfreader.viewer.editor.free.ui.myview.InterceptRecyclerView android:id="@+id/thumb_rv" android:background="@color/colorOnPrimaryContainer" android:padding="@dimen/dp_8" android:visibility="gone" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="@dimen/dp_90" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+            <View android:id="@+id/thumb_dividing_line" android:background="@color/colorPreviewThumbLine" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/dp_1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/thumb_rv"/>
+            <FrameLayout android:id="@+id/slideContainer" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_6" android:layout_marginStart="@dimen/dp_6" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <lib.zj.pdfeditor.scroll.PDFScrollHandle android:layout_gravity="end" android:id="@+id/scrollHandle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </lib.zj.pdfeditor.scroll.PDFScrollHandle>
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="@color/color_F0F2F5_232528" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+        <FrameLayout android:id="@+id/preview_convert_to_pdf_fl" android:background="@color/color_white_232528" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" app:layout_constraintBottom_toTopOf="@+id/bottomAdContainer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <include layout="@layout/word2pdf_convert_btn_layout"/>
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="vertical" android:id="@+id/bottomAdContainer" android:background="@color/colorBannerAdBackground" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_max="@dimen/dp_70" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:id="@+id/ad_line" android:background="@color/colorPreviewThumbLine" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ViewStub android:id="@+id/toast_vs" android:layout="@layout/layout_preview_toast_vs" android:inflatedId="@+id/preview_toast" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_below="@+id/top_ll" android:layout_centerHorizontal="true"/>
+    <ViewStub android:id="@+id/preview_page_number_vs" android:layout="@layout/layout_preview_page_number" android:layout_width="wrap_content" android:layout_height="@dimen/dp_86" android:layout_centerInParent="true"/>
+    <include android:id="@+id/root_preview_progressbar" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_pdf2image_preview_loading"/>
+    <pdf.pdfreader.viewer.editor.free.feature.pdf2word.widget.Pdf2WordConvertCompletedView android:id="@+id/pdf2word_convert_completed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

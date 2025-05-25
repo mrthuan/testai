@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" android:fromDegrees="90" android:toDegrees="90">
+    <shape android:shape="line">
+        <stroke android:width="@dimen/dp_1" android:color="@color/colorOnEditTextPrimaryHint" android:dashWidth="@dimen/dp_6" android:dashGap="@dimen/dp_3"/>
+    </shape>
+</rotate>

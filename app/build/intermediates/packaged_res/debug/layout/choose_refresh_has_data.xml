@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_refresh_has_data" android:background="@color/colorPrimaryContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+    <pdf.pdfreader.viewer.editor.free.ui.widget.ProgressView android:layout_gravity="center" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" app:img="@drawable/progress_img_to_pdf_ic"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/colorSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f130454" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" style="@style/TextViewFont_RobotoMedium"/>
+</LinearLayout>

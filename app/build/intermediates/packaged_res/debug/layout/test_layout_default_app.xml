@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/pdf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PDF"/>
+        <TextView android:id="@+id/tv_pdf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/xls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xls"/>
+        <TextView android:id="@+id/tv_xls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/ppt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ppt"/>
+        <TextView android:id="@+id/tv_ppt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="doc"/>
+        <TextView android:id="@+id/tv_doc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/docx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="docx"/>
+        <TextView android:id="@+id/tv_docx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/xlsx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xlsx"/>
+        <TextView android:id="@+id/tv_xlsx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</LinearLayout>

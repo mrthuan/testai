@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/ad_exit_card_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/ad_exit_card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cm_dp_16" android:layout_marginTop="@dimen/cm_dp_20" android:layout_marginRight="@dimen/cm_dp_16" android:layout_marginBottom="@dimen/cm_dp_30" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="@dimen/cm_dp_3" app:cardElevation="0dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ad_exit_card_ly" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:id="@+id/ad_loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cm_dp_300">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/ad_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/cm_dp_54" android:minHeight="@dimen/cm_dp_54" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/cm_sp_16" android:textColor="@color/ad_exit_card_exit_text_color" android:gravity="center" android:id="@+id/ad_exit_tv" android:background="@color/ad_exit_card_exit_text_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/cm_dp_50" android:text="@string/arg_res_0x7f1304c4" android:fontFamily="@string/arg_res_0x7f130433"/>
+</LinearLayout>

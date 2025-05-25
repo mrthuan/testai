@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_bottom_edit_container" android:background="@color/colorPrimaryOld" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/pdf_bottom_1_edit" android:background="@color/colorPrimaryOld" android:layout_width="match_parent" android:layout_height="@dimen/bottom_annotate_edit_layout_height">
+        <RelativeLayout android:id="@+id/pdf_bottom_1_edit_copy" android:background="@drawable/selector_preview_edit_mode_click" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_copy" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_edit_copy"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/pdf_bottom_1_edit_highlight" android:background="@drawable/selector_preview_edit_mode_click" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_highlight" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_edit_highlight" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/pdf_bottom_1_edit_under" android:background="@drawable/selector_preview_edit_mode_click" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_underline" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_edit_underline" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/pdf_bottom_1_edit_middle" android:background="@drawable/selector_preview_edit_mode_click" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_deleteline" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_edit_delete" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/pdf_bottom_1_edit_draw" android:background="@drawable/selector_preview_edit_mode_click" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <pdf.pdfreader.viewer.editor.free.ui.widget.GraffitiIconView android:id="@+id/view_graffiti" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_centerInParent="true"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_graffiti_color" android:background="@drawable/selector_preview_edit_mode_click" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0">
+                <View android:id="@+id/view_edit_graffiti_line" android:background="@color/color_100_cbccd1_333538" android:visibility="visible" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_18" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <pdf.pdfreader.viewer.editor.free.ui.widget.AddTextColorView android:id="@+id/view_graffiti_change_color" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_centerInParent="true" app:centerColor="@color/edit_color_4" app:outSideStrokeColor="@color/edit_color_4"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/view_edit_graffiti_color_sybscript" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" android:layout_marginTop="@dimen/dp_14" android:layout_alignTop="@+id/view_graffiti_change_color" android:layout_marginStart="@dimen/dp_14" android:layout_alignStart="@+id/view_graffiti_change_color" app:srcCompat="@drawable/ic_edit_subscript" app:tint="@color/colorSurface"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/pdf_bottom_1_edit_top_line" android:background="@color/colorEditDivider" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+    <View android:layout_gravity="bottom" android:background="@color/colorEditDivider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+</FrameLayout>

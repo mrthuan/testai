@@ -1,0 +1,20 @@
+package b8;
+
+import android.content.Context;
+import android.os.Looper;
+import com.google.android.gms.common.api.Api;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.internal.ClientSettings;
+import com.google.android.gms.signin.internal.SignInClientImpl;
+import com.google.android.gms.signin.zac;
+
+/* compiled from: com.google.android.gms:play-services-base@@18.3.0 */
+/* loaded from: classes2.dex */
+public final class b extends Api.AbstractClientBuilder {
+    @Override // com.google.android.gms.common.api.Api.AbstractClientBuilder
+    public final /* bridge */ /* synthetic */ Api.Client buildClient(Context context, Looper looper, ClientSettings clientSettings, Object obj, GoogleApiClient.ConnectionCallbacks connectionCallbacks, GoogleApiClient.OnConnectionFailedListener onConnectionFailedListener) {
+        zac zacVar = (zac) obj;
+        int i10 = SignInClientImpl.f11947e;
+        throw null;
+    }
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/homeRootView" android:background="@color/colorPrimary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/statusBarView" android:layout_width="match_parent" android:layout_height="24dp" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/ll_bottom_container" app:layout_constraintTop_toBottomOf="@+id/statusBarView">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|exitUntilCollapsed|scroll">
+                <LinearLayout android:orientation="vertical" android:id="@+id/normal_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tool_bar_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_16" android:textColor="@color/colorSurface" android:id="@+id/ic_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextViewFont_RobotoBold"/>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/img_subscription" android:background="?android:attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:scaleType="center" android:layout_marginEnd="@dimen/dp_2" app:srcCompat="@drawable/ic_home_subscription"/>
+                            <ImageView android:id="@+id/img_search" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_home_search" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp_2"/>
+                            <ImageView android:layout_gravity="center" android:id="@+id/img_sort" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_home_sort" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp_2"/>
+                            <ImageView android:layout_gravity="center" android:id="@+id/img_select_all" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_home_check" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp_2"/>
+                            <ImageView android:layout_gravity="center" android:id="@+id/img_setting" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="@dimen/dp_4" android:visibility="invisible" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ic_home_settings" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp_8"/>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <FrameLayout android:id="@+id/top_tab_fl" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+                        <View android:layout_gravity="bottom" android:id="@+id/tab_line" android:background="@color/colorPrimaryDim" android:layout_width="match_parent" android:layout_height="@dimen/dp_1"/>
+                        <pdf.pdfreader.viewer.editor.free.widget.tabs.ReaderTabLayout android:id="@+id/top_tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" app:tabBackground="@color/transparent" app:tabIndicator="@drawable/bg_top_tab_bottom" app:tabIndicatorAnimationMode="linear" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="@dimen/dp_3" app:tabMode="fixed" app:tabRippleColor="@color/transparent" app:tabTextAppearance="@style/ThemeTextAppearanceTab"/>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llRecentAdd" android:background="@drawable/shape_recent_add_bg" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_44">
+                        <ImageView android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_folder" android:contentDescription="@null" android:layout_marginStart="@dimen/dp_8"/>
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/colorSurface" android:id="@+id/tvRecentAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f130419" android:layout_marginStart="@dimen/dp_4" style="@style/TextViewFont_RobotoMedium"/>
+                        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@+id/tvRecentAddedNewNum" android:background="@drawable/shape_recent_add_num_bg" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" style="@style/TextViewFont_RobotoMedium"/>
+                        <android.widget.Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                        <ImageView android:id="@+id/ivRecentArrow" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_arrow_right_simple" android:contentDescription="@null"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <include app:layout_collapseMode="pin" layout="@layout/layout_home_multi_select_top_bar"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/listTopBannerLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <View android:layout_gravity="bottom" android:id="@+id/listTopBannerLine" android:background="@color/colorHomeLine" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                </FrameLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_ll" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/arg_res_0x7f130072">
+            <pdf.pdfreader.viewer.editor.free.ui.myview.ReaderViewPager android:id="@+id/myViewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <View android:id="@+id/space_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/bottom_layout" android:background="@drawable/bg_corner10_white_top" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="pdf.pdfreader.viewer.editor.free.ui.widget.behavior.HideBottomViewOnScrollBehavior">
+            <include layout="@layout/snack_android11_browse_pdf"/>
+            <View android:id="@+id/scan_ad_line" android:background="@color/colorHomeLine" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <androidx.core.widget.NestedScrollView android:id="@+id/scan_ad_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_scan_ad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </androidx.core.widget.NestedScrollView>
+            <FrameLayout android:id="@+id/item_pdf_icon" android:background="@color/colorPrimaryOld" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:background="@color/colorPrimaryOld" android:layout_width="match_parent" android:layout_height="@dimen/dp_58" android:elevation="0dp" android:outlineProvider="none" app:tabBackground="@null" app:tabIndicator="@null" app:tabIndicatorHeight="0dp" app:tabMaxWidth="0dp" app:tabRippleColor="@null"/>
+                <include layout="@layout/layout_home_multi_select_bottom_bar"/>
+                <View android:layout_gravity="top" android:background="@color/colorHomeLine" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@+id/home_guide_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="top" android:orientation="vertical" android:paddingBottom="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" app:layout_anchor="@+id/bottom_layout" app:layout_anchorGravity="end|top">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/home_tools_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_tools_home_default"/>
+        </FrameLayout>
+        <pdf.pdfreader.viewer.editor.free.ui.widget.CreatePDFToolsGuideView android:layout_gravity="end|top" android:id="@+id/home_tools_guide_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd" app:layout_anchor="@+id/home_tools_iv" app:layout_anchorGravity="end|top"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@+id/ll_bottom_container" android:background="@color/colorBannerAdBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="0dp" android:layout_height="wrap_content" android:overScrollMode="never" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+        <View android:id="@+id/bottom_ad_line" android:background="@color/colorHomeLine" android:layout_width="0dp" android:layout_height="0.5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

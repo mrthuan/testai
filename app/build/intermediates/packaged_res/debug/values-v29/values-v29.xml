@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen">
+    </style>
+    <style name="PrivacyPolicyTheme" parent="@style/Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorSurface</item>
+        <item name="android:windowBackground">@color/colorPrimaryOld</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimaryOld</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryOld</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

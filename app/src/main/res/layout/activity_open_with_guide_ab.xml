@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/black_70" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_corner8_white_bottom" android:paddingTop="@dimen/dp_36" android:paddingBottom="@dimen/dp_24" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_25" android:paddingEnd="@dimen/dp_25">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/colorSurface" android:gravity="center" android:id="@+id/tv_open_with_guide_ab_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" style="@style/TextViewFont_RobotoMedium"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="@dimen/dp_176" android:scaleType="fitXY" app:srcCompat="@mipmap/img_guide_permission_phone"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:layout_marginStart="@dimen/dp_27" android:layout_marginEnd="@dimen/dp_27">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20">
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_open_with_guide_index" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:text="1" style="@style/TextViewFont_RobotoBold"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/colorSurface" android:id="@+id/tv_open_with_guide_ab_index1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f13032a" android:layout_marginStart="@dimen/dp_10" style="@style/TextViewFont_RobotoRegular"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/ll_open_with_guide_ab_middle" android:layout_width="wrap_content" android:layout_height="@dimen/dp_74" android:layout_marginTop="-1dp" android:layout_marginBottom="-1dp" android:paddingStart="@dimen/dp_9" android:paddingEnd="@dimen/dp_9">
+                    <View android:id="@+id/line_open_with_guide_ab_middle" android:background="@drawable/line_open_with_guide" android:layout_width="@dimen/dp_78" android:layout_height="@dimen/dp_78" android:layerType="software" android:layout_marginStart="-39dp"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_open_with_guide_ab_middle" android:layout_width="@dimen/dp_41" android:layout_height="@dimen/dp_41" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_18" app:srcCompat="@drawable/ic_pdf_reader"/>
+                </RelativeLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20">
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_open_with_guide_index" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:text="2" style="@style/TextViewFont_RobotoBold"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/colorSurface" android:id="@+id/tv_open_with_guide_ab_index2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10" style="@style/TextViewFont_RobotoRegular"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_open_with_guide_ab_bottom" android:visibility="gone" android:layout_width="@dimen/dp_41" android:layout_height="@dimen/dp_41" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_28" app:srcCompat="@drawable/ic_pdf_reader"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_ok" android:background="@drawable/shape_round_23_red" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_46" android:layout_marginTop="@dimen/dp_16" android:text="@string/arg_res_0x7f130023" style="@style/TextViewFont_RobotoBold"/>
+    </LinearLayout>
+</LinearLayout>

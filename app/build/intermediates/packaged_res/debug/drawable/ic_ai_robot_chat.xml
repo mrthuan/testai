@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/dp_30" android:width="@dimen/dp_32" android:viewportWidth="32" android:viewportHeight="30">
+    <group>
+        <clip-path android:pathData="M-2,-5h36v38.842h-36z"/>
+        <path android:fillColor="@drawable/res_0x7f080022_ic_ai_robot_chat__0" android:pathData="M19.573,2.487C19.996,2.246 20.243,2.105 20.45,2.105C21.071,2.105 20.606,3.553 19.688,4.867C25.437,5.79 29.883,10.676 30.081,16.677C30.254,21.919 26.051,26.263 20.806,26.263H12.048C6.706,26.263 2.46,21.777 2.753,16.442C3.093,10.255 7.924,5.331 13.979,4.765C17.22,3.827 18.738,2.962 19.573,2.487Z" android:fillType="evenOdd"/>
+        <path android:fillColor="@drawable/res_0x7f080023_ic_ai_robot_chat__1" android:pathData="M16.396,17.279a3.371,7.749 89.29,1 0,0.084 6.742a3.371,7.749 89.29,1 0,-0.084 -6.742z" android:strokeAlpha="0.6" android:fillAlpha="0.6"/>
+        <path android:fillColor="@drawable/res_0x7f080024_ic_ai_robot_chat__2" android:pathData="M6.996,16.064C6.992,12.283 10.056,9.216 13.836,9.216H18.59C22.355,9.216 25.406,12.268 25.406,16.032C25.406,18.722 23.317,20.95 20.629,21.047C19.167,21.1 17.546,21.141 16.031,21.141C14.458,21.141 12.882,21.073 11.497,20.983C8.923,20.817 6.999,18.644 6.996,16.064Z"/>
+        <path android:fillColor="@drawable/res_0x7f080025_ic_ai_robot_chat__3" android:pathData="M12.962,13.474L12.962,13.474A0.996,0.996 0,0 1,13.958 14.469L13.958,16.46A0.996,0.996 0,0 1,12.962 17.456L12.962,17.456A0.996,0.996 0,0 1,11.967 16.46L11.967,14.469A0.996,0.996 0,0 1,12.962 13.474z"/>
+        <path android:fillColor="@drawable/res_0x7f080026_ic_ai_robot_chat__4" android:pathData="M21.487,14.783L21.487,14.783A0.932,0.932 69.419,0 1,20.966 15.993L18.997,16.776A0.932,0.932 69.419,0 1,17.787 16.255L17.787,16.255A0.932,0.932 69.419,0 1,18.308 15.045L20.277,14.262A0.932,0.932 69.419,0 1,21.487 14.783z"/>
+        <path android:fillColor="@drawable/res_0x7f080027_ic_ai_robot_chat__5" android:pathData="M9.942,10.587a1.956,3.362 55.331,1 0,2.226 3.218a1.956,3.362 55.331,1 0,-2.226 -3.218z" android:strokeAlpha="0.5" android:fillAlpha="0.5"/>
+        <path android:fillColor="@drawable/res_0x7f080028_ic_ai_robot_chat__6" android:pathData="M21.802,16.705a1.578,2.711 55.331,1 0,1.795 2.595a1.578,2.711 55.331,1 0,-1.795 -2.595z" android:strokeAlpha="0.3" android:fillAlpha="0.3"/>
+    </group>
+</vector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/ad_bg_full_loading_dialog" android:layout_width="126dp" android:layout_height="98dp">
+    <androidx.appcompat.widget.LottieView android:layout_gravity="center" android:id="@+id/ad_full_loading_view" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="18dp" android:layout_marginBottom="16dp" android:layout_weight="1"/>
+    <TextView android:textSize="11sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="10dp" android:text="@string/arg_res_0x7f130028" android:fontFamily="@string/arg_res_0x7f130433"/>
+</LinearLayout>

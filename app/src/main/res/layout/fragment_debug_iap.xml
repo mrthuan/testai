@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout style="@style/DebugContainer">
+        <Button android:id="@+id/ocr_display_subscribe_switch" android:text="重置OCR试用时需要进入一次订阅页" style="@style/DebugButton"/>
+        <CheckBox android:id="@+id/ocr_always_show_tip_switch" android:text="OCR试用是否每次都展示提醒" style="@style/DebugCheckbox"/>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:layout_height="wrap_content" android:text="订阅L轮实验配置" style="@style/DebugText"/>
+            <RadioGroup android:orientation="vertical" android:id="@+id/billingTestLChange" android:layout_height="wrap_content" style="@style/DebugCheckbox">
+                <RadioButton android:id="@+id/billingTestLPlan" android:layout_width="wrap_content" android:layout_height="0dp" android:text="对照组" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/billingTestL1Plan" android:layout_width="wrap_content" android:layout_height="0dp" android:text="实验组L" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/billingTestLNoPlan" android:layout_width="wrap_content" android:layout_height="0dp" android:text="未拉取到配置" android:layout_weight="1"/>
+            </RadioGroup>
+        </LinearLayout>
+        <Button android:id="@+id/goToBlackFridayPage" android:text="跳转黑色星期五订阅页" style="@style/DebugButton"/>
+        <CheckBox android:id="@+id/subscriptionHappyNewYear2025Cb" android:text="是否打开2025新年活动订阅页" style="@style/DebugCheckbox"/>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="首刷展示次数" style="@style/DebugText"/>
+            <EditText android:id="@+id/subscriptionSplashShowTimeEt" android:hint="默认3次" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/subscriptionSplashShowTimeBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/subscriptionSplashLoadingCb" android:text="是否展示首刷Loading" style="@style/DebugCheckbox"/>
+        <Button android:id="@+id/resetSplashSubscription" android:text="重置首刷次数" style="@style/DebugButton"/>
+        <CheckBox android:id="@+id/alwaysShowSplashSubscribe" android:text="首刷去除地区、时间限制" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/user_premium_switch" android:text="用户已经订阅(不勾选按照当前实际订阅状态)" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/operate_pdf_need_premium_switch" android:text="需要订阅才可拆分合并" style="@style/DebugCheckbox"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/splashSubscriptionLoadingBtn" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="首刷loading" android:textAllCaps="false"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout style="@style/DebugContainer">
+        <CheckBox android:id="@+id/cb_show_home_select_guide" android:text="是否每次都显示 首页多选引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cbShowBootCompletedNotification" android:text="设备重启后展示通知栏升开关" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/alwaysOCRUploadImageErrorCheck" android:text="使OCR上传图片失败(成功一次失败一次)，此设置只在本次进程内有效" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/alwaysOCRTaskErrorCheck" android:text="使OCR识别失败(成功一次失败一次)，此设置只在本次进程内有效" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/skipOCRNetworkCheck" android:text="跳过OCR过程中网络检测，此设置只在本次进程内有效" style="@style/DebugCheckbox"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OCR select字符识别" style="@style/DebugText"/>
+            <EditText android:id="@+id/ocrWordEt" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入任意字符" android:maxLines="5"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/ocrWordBtn1" android:layout_width="0dp" android:text="点击查看结果" android:layout_weight="1" style="@style/DebugButton"/>
+                <Button android:id="@+id/ocrWordBtn2" android:layout_width="0dp" android:text="复制" android:layout_weight="1" style="@style/DebugButton"/>
+                <Button android:id="@+id/ocrWordBtn3" android:layout_width="0dp" android:text="清空" android:layout_weight="1" style="@style/DebugButton"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置当前用户类型（跳过问询页时使用）\10（-1未获取 0 自然用户 1 GoogleAd 2 预装 3.meta 4.applovin 5.asa(ios) 6.moloco 99其他买量情况）" style="@style/DebugText"/>
+            <EditText android:id="@+id/skipInquiryPageLocalUserTypeEt" android:hint="必须为数字" android:lines="1" android:inputType="text" style="@style/DebugEditText"/>
+            <Button android:id="@+id/skipInquiryPageLocalUserTypeBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置跳过问询页的用户类型（-1未获取 0 自然用户 1 GoogleAd 2 预装 3.meta 4.applovin 5.asa(ios) 6.moloco 99其他买量情况，也可设置为空字符）" style="@style/DebugText"/>
+            <EditText android:id="@+id/skipInquiryPageUserTypeEt" android:hint="默认为-1,0,1,2,3,4,5,6,99" android:lines="1" android:inputType="text" style="@style/DebugEditText"/>
+            <Button android:id="@+id/skipInquiryPageUserTypeBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OCR免费使用次数" style="@style/DebugText"/>
+            <EditText android:id="@+id/edit_ocr_free_count" android:layout_width="0dp" android:hint="默认3次" android:lines="1" android:layout_weight="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/btn_ocr_free_count_ok" android:layout_width="wrap_content" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/showOcrUpdateRedDot" android:text="每次展示OCR升级红点" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/showFilterGuideSwitch" android:text="每次展示滤镜应用全部引导" style="@style/DebugCheckbox"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建pdf耗时（毫秒）" style="@style/DebugText"/>
+            <EditText android:id="@+id/edit_pdf_create_time" android:layout_width="0dp" android:hint="默认0毫秒" android:lines="1" android:layout_weight="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/btn_pdf_create_time_ok" android:layout_width="wrap_content" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/cb_ai_big_file_upload_check" android:text="AI大文件上传是否开启本地检测（默认开启，用来测试服务器检测）" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_set_convert_un_subscribe_area" android:text="设置所有付费功能 为非付费地区" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_always_show_more_page_manage_red_dot" android:text="是否每次都显示pdf预览页PageManage按钮升级红点" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_always_show_pdf2word_guide" android:text="是否每次都显示pdf预览页PageManage引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_always_show_pdf_create_edit_guide" android:text="是否每次都显示pdf预览页【创建后编辑】引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_page_manager_tap_jump" android:text="页面管理页面跳转引导是否一直显示" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_page_manager_drag_sort" android:text="页面管理拖拽排序提示是否一直显示" style="@style/DebugCheckbox"/>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="PDF编辑文本操作撤销/恢复步数限制(次)" style="@style/DebugText"/>
+            <EditText android:id="@+id/editorPDFUndoRedoMaxStepEt" android:hint="默认512步" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/editorPDFUndoRedoMaxStepBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_pdf2word_zip_psw" android:text="重置widget引导 app打开次数，下次进入显示" style="@style/DebugButton"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:text="【v170版本(PDF编辑)Start】" style="@style/DebugText"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="老用户剩余免费次数" style="@style/DebugText"/>
+            <EditText android:id="@+id/edit_free_save_count" android:layout_width="0dp" android:hint="默认3次" android:lines="1" android:layout_weight="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/btn_free_save_count_ok" android:layout_width="wrap_content" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_old_user_edit_save" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="老用户免费使用保存弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_widget_add_failed_dialog" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="小组件添加失败弹窗" style="@style/DebugButton"/>
+        <CheckBox android:id="@+id/cb_pdf_editor_guide_open" android:text="首页编辑引导一直展示" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_pdf_editor_red_dot_open" android:text="Tools edit text红点一直展示" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/always_show_preview_edit_guide" android:text="预览页是否每次都展示编辑引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/always_show_preview_use_edit_guide" android:text="预览页是否每次都展示使用编辑引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/always_show_preview_add_text_guide" android:text="预览页是否每次都展示addText入口迁移引导" style="@style/DebugCheckbox"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:text="【v170版本(PDF编辑)End】" style="@style/DebugText"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/tv_167_start" android:text="【v167版本(PDF转word/img)Start】" style="@style/DebugText"/>
+        <CheckBox android:id="@+id/cb_always_show_pdf2word" android:text="是否每次都显示pdf2word升级红点" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_always_show_pdf2img" android:text="是否每次都显示pdf2Img升级红点" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/cb_always_show_add_desktop" android:text="是否每次都显示add to Desktop升级红点" style="@style/DebugCheckbox"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/tv_167_end" android:text="【v167版本(PDF转word/img)End】" style="@style/DebugText"/>
+        <LinearLayout style="@style/DebugFrame">
+            <CheckBox android:id="@+id/cb_ai_empty_answer" android:text="是否一直返回【无法按照指令处理文件】" style="@style/DebugCheckbox"/>
+            <TextView android:id="@+id/tv_ai_title" android:text="AI免费次数" style="@style/DebugText"/>
+            <EditText android:id="@+id/edit_ai_free_total_count" android:hint="默认3次" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/btn_save_ai_free_total_count" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="AI轮询查询接口超时时间" style="@style/DebugText"/>
+            <EditText android:id="@+id/edit_ai_query_result_time_out" android:hint="默认120S" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/btn_ai_query_result_time_out" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_reset_ai_event" android:text="重置ai仅上传一次埋点时机" style="@style/DebugButton"/>
+        <CheckBox android:id="@+id/gpAppReviewSwitch" android:text="程序内展示GP评分" style="@style/DebugCheckbox"/>
+        <Button android:id="@+id/resetLanguageFCMRecallBtn" android:text="重置FCM召回通知执行限制" style="@style/DebugButton"/>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="语言选择页FCM召回通知延迟时间(ms)" style="@style/DebugText"/>
+            <EditText android:id="@+id/languageRecallFCMIntervalTimeEt" android:hint="默认86400000ms" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/languageRecallFCMIntervalTimeBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="语言选择页召回通知次数(包含1min首次)" style="@style/DebugText"/>
+            <EditText android:id="@+id/languageRecallCountTimeEt" android:hint="默认2次" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/languageRecallCountTimeBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <RadioGroup android:orientation="vertical" android:id="@+id/languageRecallTextChange" android:layout_height="@dimen/dp_186" style="@style/DebugCheckbox">
+            <RadioButton android:id="@+id/languageRecallTextA" android:layout_width="wrap_content" android:layout_height="0dp" android:text="方案A" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/languageRecallTextB" android:layout_width="wrap_content" android:layout_height="0dp" android:text="方案B" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/languageRecallTextC" android:layout_width="wrap_content" android:layout_height="0dp" android:text="方案C" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/languageRecallTextD" android:layout_width="wrap_content" android:layout_height="0dp" android:text="方案D" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/languageRecallTextE" android:layout_width="wrap_content" android:layout_height="0dp" android:text="方案E" android:layout_weight="1"/>
+        </RadioGroup>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="语言选择页首次召回通知延迟时间(s)" style="@style/DebugText"/>
+            <EditText android:id="@+id/languageRecallDelayTimeEt" android:hint="默认60s" android:lines="1" android:inputType="number" style="@style/DebugEditText"/>
+            <Button android:id="@+id/languageRecallDelayTimeBtn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/alwaysShowLanguageRecallSwitch" android:text="始终展示语言选择页召回通知" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/file_type_new_icon_switch" android:text="格式图标展示新样式" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/setting_notification_switch" android:text="设置页面通知开关" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/home_upgrade_switch" android:text="首页检查更新" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/setting_upgrade_switch" android:text="设置页检查更新" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/buy_user_switch" android:text="买量用户" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/adjust_ad_switch" android:text="isAdjustAd" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/pre_install_switch" android:text="预装用户" style="@style/DebugCheckbox"/>
+        <Button android:id="@+id/so_load_fail_btn" android:text="模拟创建下个页面so加载失败弹窗\10需杀死程序才可以重置" style="@style/DebugButton"/>
+        <LinearLayout style="@style/DebugFrame">
+            <CheckBox android:id="@+id/language_choose_switch" android:text="展示语言选择页" style="@style/DebugCheckbox"/>
+            <TextView android:text="语言选择页不展示时间(h)" style="@style/DebugText"/>
+            <EditText android:id="@+id/language_choose_time_et" android:hint="默认72h" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+            <Button android:id="@+id/language_choose_time_ok_btn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="openWith黑名单列表,格式json" style="@style/DebugText"/>
+            <EditText android:id="@+id/open_with_black_list_et" android:maxLines="6" android:lines="3" android:inputType="text" style="@style/DebugEditText"/>
+            <Button android:id="@+id/open_with_black_list_ok_btn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/storage_scan_delay_switch" android:text="模拟扫描时间长(增加10s)" style="@style/DebugCheckbox"/>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="最小存储空间（默认50MB）" style="@style/DebugText"/>
+            <EditText android:id="@+id/memory_low_et" android:hint="默认50MB" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+            <Button android:id="@+id/memory_low_ok_btn" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+        <Button android:id="@+id/reset_version_btn" android:text="重置版本号为上一个版本" style="@style/DebugButton"/>
+        <Button android:id="@+id/reset_old_version_btn" android:text="重置首次版本号为上一个版本（模拟升级提醒）" style="@style/DebugButton"/>
+        <Button android:id="@+id/reset_word2pdf_update_hint" android:text="重置word转PDF升级提醒（注意，需要先重置首次版本号）" style="@style/DebugButton"/>
+        <CheckBox android:id="@+id/always_show_img_to_pdf_select_guide_switch" android:text="是否每次都展示imgToPdf图片选择引导页" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/always_show_img_to_pdf_red_dot" android:text="是否每次都展示imgToPdf和scan2pdf图片入口小红点" style="@style/DebugCheckbox"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Img to pdf 错误" android:paddingStart="@dimen/dp_6"/>
+        <RadioGroup android:id="@+id/radioGroupImg2Pdf" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="无"/>
+            <RadioButton android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内存不足弹窗"/>
+            <RadioButton android:id="@+id/rb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存储空间不足弹窗"/>
+            <RadioButton android:id="@+id/rb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他IO异常弹窗"/>
+            <RadioButton android:id="@+id/rb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名称太长弹窗"/>
+        </RadioGroup>
+        <LinearLayout style="@style/DebugFrame">
+            <TextView android:text="pdf reflow限制配置" style="@style/DebugText"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最低支持的版本号："/>
+                <EditText android:id="@+id/previewTextReflowVersion" android:hint="默认28" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最低内存要求："/>
+                <EditText android:id="@+id/previewTextReflowMemory" android:hint="默认2G" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重排位图的最大限制:"/>
+                <EditText android:id="@+id/previewReflowBitmapMax" android:hint="默认100M" android:inputType="numberDecimal" style="@style/DebugEditText"/>
+            </LinearLayout>
+            <Button android:id="@+id/pdf_reflow_config_ok" android:text="OK" style="@style/DebugButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

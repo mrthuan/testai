@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <lib.zj.office.system.dialog.ColorPickerView android:id="@+id/colorPickerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <TextView android:layout_gravity="center" android:id="@+id/strokeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stroke"/>
+        <SeekBar android:id="@+id/strokeBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:max="10"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp">
+        <TextView android:layout_gravity="center" android:id="@+id/alphaView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alpha"/>
+        <SeekBar android:id="@+id/alphaBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:max="255"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/ok" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OK" android:layout_weight="1"/>
+        <Button android:id="@+id/cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cancel" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

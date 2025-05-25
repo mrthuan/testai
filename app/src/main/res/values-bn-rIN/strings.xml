@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="arg_res_0x7f13013c">গ্যালারি থেকে বেছে নিন</string>
+    <string name="arg_res_0x7f13013d">বাতিল</string>
+    <string name="arg_res_0x7f13013e">পেশ করুন</string>
+    <string name="arg_res_0x7f13013f">একটি ফটো তুলুন</string>
+    <string name="arg_res_0x7f130140">অনুগ্রহ করে আমাদের আরও বিস্তারিত বলুন যাতে আমরা আরও দ্রুত আপনার সমস্যা চিহ্নিত করতে এবং সমাধান করতে পারি (কমপক্ষে %s বর্ণ)</string>
+    <string name="arg_res_0x7f130146">আপনি যে সমস্যার সম্মুখীন হয়েছেন তা আমাদের বলুন</string>
+    <string name="arg_res_0x7f130147">ধরন</string>
+    <string name="arg_res_0x7f1301c9">গুগল প্লে রেট</string>
+    <string name="arg_res_0x7f1301ca">রেট</string>
+    <string name="arg_res_0x7f1301cb">আপনি আমাদের রেট করতে পারেন তাহলে আমরা খুব কৃতজ্ঞ হব.</string>
+    <string name="arg_res_0x7f1301cc">আপনার সমর্থনের জন্য ধন্যবাদ!</string>
+    <string name="arg_res_0x7f1301cd">আপনার রিভিউ থেকে অন্যান্য ব্যবহারকারীরা উপকৃত হবেন। অনুগ্রহ করে গুগল প্লে আপনার রিভিউ দিন।</string>
+    <string name="arg_res_0x7f1301ce">আমরা সেরা যেটা পেতে পারি</string>
+    <string name="arg_res_0x7f1301cf">আপনার প্রতিক্রিয়ার স্বাগত জানাই.</string>
+    <string name="arg_res_0x7f1301d0">অনেক প্রশংসিত!</string>
+    <string name="arg_res_0x7f1301d1">ভালো লেগেছে</string>
+    <string name="arg_res_0x7f1301d2">ওহ, আমরা দুঃখিত...</string>
+    <string name="arg_res_0x7f1301d5">ধন্যবাদ!</string>
+    <string name="arg_res_0x7f1301d6">আপনার সাপোর্ট আমাদের সবচেয়ে বড় প্রেরণা আছে!</string>
+</resources>

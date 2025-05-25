@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/colorNotificationBackground" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="19sp" android:layout_gravity="center_horizontal" android:id="@+id/readyTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f1301e0" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Title"/>
+    <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/lib_upgrade_white" android:gravity="center" android:id="@+id/installTv" android:background="@drawable/upgrade_shape_corner_blue" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp" android:text="@string/arg_res_0x7f1301d7" style="@style/font_bold"/>
+</LinearLayout>

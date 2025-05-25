@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/shape_round_14_white_black" android:paddingLeft="@dimen/dp_14" android:paddingTop="@dimen/dp_6" android:paddingRight="@dimen/dp_14" android:paddingBottom="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_14" android:paddingVertical="@dimen/dp_6">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_widget_search" android:background="@drawable/shape_widget_text_bg" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@mipmap/ic_widget_logo"/>
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/colorSurfaceFix" android:layout_gravity="center_vertical" android:id="@+id/tv_widget_search" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f130456" android:layout_weight="1" android:layout_marginStart="@dimen/dp_6" style="@style/TextViewFont_RobotoMedium"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@+id/ll_widget_search">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_widget_home" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="0dp" android:src="@mipmap/ic_widget_home" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_100_black_white" android:id="@+id/tv_widget_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/arg_res_0x7f130192" style="@style/little_widget_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_widget_recent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="0dp" android:src="@mipmap/ic_widget_recent" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_100_black_white" android:id="@+id/tv_widget_recent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/arg_res_0x7f130418" style="@style/little_widget_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_widget_bookmark" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="0dp" android:src="@mipmap/ic_widget_bookmark" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_100_black_white" android:id="@+id/tv_widget_bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/arg_res_0x7f130021" style="@style/little_widget_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_widget_edit_pdf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="0dp" android:src="@mipmap/ic_widget_editpdf" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_100_black_white" android:id="@+id/tv_widget_edit_pdf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/arg_res_0x7f13005a" style="@style/little_widget_style"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

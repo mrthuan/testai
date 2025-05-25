@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/subscription_retain_dialog_btn_coffee" android:text="7天订阅挽留弹窗(coffee)" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_extract_err_oom" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="导出失败-运行内存不足弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_extract_err_other" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="导出失败-其他错误弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_first_pdf_create_guide" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="首次创建引导" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_inserting" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="页面管理inserting弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_clear_take_pic" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="相机页清除已拍摄照片确认弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_page_manager_save" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="页面管理保存弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_page_manager_delete" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="页面管理删除确认弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_page_manager_quit" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="页面管理退出确认弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_pdf2img_loading" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF2IMG loading" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_item_click_loading" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="点击item解析loading" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/widgets_home_screen_shorcuts" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="桌面快捷方式引导" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/download_failed_des" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="SO下载错误弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/download_failed_network" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="SO下载网络错误弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/pdf2image_permission_dialog1" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF转图片存储权限弹窗1" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/pdf2image_permission_dialog2" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF转图片存储权限弹窗2" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_pdf2image_quit_convert" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF转图片退出转换弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_pdf2image_convert_result" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF转图片结果页" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_pdf2longimage_convert_result" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF转长图结果页" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_pdf2word_convert_result" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="PDF转Word结果页" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_home_screen_permission_guide" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="桌面快捷方式授权弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_home_widget_permission_guide" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="小组件授权弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_ai_all_file_permission" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="AI所有文件权限提示弹窗"/>
+        <CheckBox android:id="@+id/show_tools_ai_answer_change_guide" android:text="是否每次都显示 AI回答换一换引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/show_tools_ai_historty_guide" android:text="是否每次都显示 AI历史引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/show_tools_ai_new" android:text="是否每次都显示AI New标识" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/show_preview_ai_guide" android:text="是否每次都显示预览页AI 引导" style="@style/DebugCheckbox"/>
+        <Button android:id="@+id/tools_red_dot_btn" android:text="重置Tools标签上小红点可以显示" style="@style/DebugButton"/>
+        <Button android:id="@+id/test_self_btn" android:text="跳转到AI自我介绍页" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_intent_ai_chat" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="跳转到AI会话页"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_word2pdf_top_tips" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="word2pdf 转换完成提示横幅"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_word2pdf_convert_loading" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="word2pdf 转换按钮"/>
+        <CheckBox android:id="@+id/show_word2pdf_new" android:text="是否每次都显示word2pdf New标识" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/show_word2pdf_guide" android:text="是否每次都显示word2pdf引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/show_home_tools_guide" android:text="是否每次都显示首页tools入口引导" style="@style/DebugCheckbox"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_choose_file_top_permission" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="10系统文件选择页顶部权限提示文案"/>
+        <CheckBox android:id="@+id/always_show_add_text_guide" android:text="是否每次都展示AddText引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/always_show_add_text_red_dot" android:text="是否每次都展示AddText入口小红点" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/showAdjustCropGuideSwitch" android:text="每次展示页面调整页裁剪引导" style="@style/DebugCheckbox"/>
+        <CheckBox android:id="@+id/show_page_adjust_guide_switch" android:text="每次展示页面调整页滑动引导" style="@style/DebugCheckbox"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_choose_pdf_loading" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="pdf 选择文件页loading"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_choose_pdf_top_loading" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="pdf 选择文件页顶部loading"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_save_change" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="编辑保存提示弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_all_file_permission" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="所有文件权限提示弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/image_adjust_delete_btn" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="页面调整页-删除图片弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/image_adjust_confirm_btn" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="页面调整页-退出确认弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_import_crop_loading" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="导入图片到裁剪页面loading"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_storage_permission1" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="存储权限挽留弹窗13以下"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_storage_permission2" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="多次拒绝存储权限挽留弹窗13以下"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_storage_permission3" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="存储权限挽留弹窗13、14"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_storage_permission4" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="多次拒绝存储权限挽留弹窗13、14"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_crop_type" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="裁剪方式问询弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_quit_camera" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="退出相机提示弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_camera_permission1" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="相机权限弹窗1"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_camera_permission2" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="相机权限弹窗2"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_img_scan_pdf" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="图片转PDF或扫描转PDF引导弹窗"/>
+        <TextView android:textSize="@dimen/sp_20" android:text="图片转PDF弹窗" style="@style/DebugText"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_quit_conver" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="取消图片转PDF弹窗"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_conver_failed" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="图片转PDF失败弹窗(内存不足)"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_conver_failed_no_space" android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:text="图片转PDF失败弹窗(存储空间不足)"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_conver_failed_long_name" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="图片转PDF失败弹窗(名称过长)" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_conver_failed_other" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="图片转PDF失败弹窗(其他)" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_conver_loading" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="图片转PDF Loading弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_importing_loading" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="图片导入 Loading弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_img_convert_result" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="图片转PDF结果页" style="@style/DebugButton"/>
+        <TextView android:textSize="@dimen/sp_20" android:text="签名相关" style="@style/DebugText"/>
+        <CheckBox android:id="@+id/always_show_sign_red_dot" android:text="是否每次都展示升级红点" style="@style/DebugCheckbox"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_sign_switch_tab_dialog" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="切换tab保存签名弹窗" style="@style/DebugButton"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_sign_back_save_dialog" android:padding="@dimen/dp_6" android:layout_margin="@dimen/dp_6" android:text="退出二次确认弹窗" style="@style/DebugButton"/>
+        <TextView android:textSize="@dimen/sp_20" android:text="页面" style="@style/DebugText"/>
+        <LinearLayout style="@style/DebugContainer">
+            <Button android:id="@+id/tools_empty_page_btn" android:text="Tools空页面" style="@style/DebugButton"/>
+            <CheckBox android:id="@+id/show_language_tip_switch" android:text="展示预览选择红点" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/show_inversion_tip_switch" android:text="预览页展示反色引导" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/show_reflow_tip_switch" android:text="预览页展示reflow问询开启引导" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/show_reflow_update_tip_switch" android:text="预览页展示reflow升级开启引导" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/show_reflow_use_tip_switch" android:text="预览页展示reflow开启后缩放使用动效引导" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/show_reflow_update_red_dot" android:text="预览页展示reflow升级红点" style="@style/DebugCheckbox"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_20" android:text="普通弹窗" style="@style/DebugText"/>
+        <LinearLayout style="@style/DebugContainer">
+            <Button android:id="@+id/subscription_3_loading_dialog_btn" android:text="3天订阅loading" style="@style/DebugButton"/>
+            <Button android:id="@+id/subscription_14_loading_dialog_btn" android:text="14天订阅loading" style="@style/DebugButton"/>
+            <Button android:id="@+id/subscription_retain_dialog_btn_7" android:text="7天订阅挽留弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/subscription_retain_dialog_btn_14" android:text="14天订阅挽留弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/subscription_fail_dialog_btn" android:text="订阅失败弹窗" style="@style/DebugButton"/>
+            <CheckBox android:id="@+id/always_show_clear_default_switch" android:text="始终展示清除默认阅读器引导" style="@style/DebugCheckbox"/>
+            <Button android:id="@+id/samsung_clear_default_dialog_btn" android:text="清除默认二步引导（三星）" style="@style/DebugButton"/>
+            <Button android:id="@+id/xiaomi_clear_default_dialog_btn" android:text="清除默认二步引导（小米）" style="@style/DebugButton"/>
+            <Button android:id="@+id/pixel_clear_default_dialog_btn" android:text="清除默认二步引导（Pixel）" style="@style/DebugButton"/>
+            <Button android:id="@+id/show_scanner_dialog_btn" android:text="Scanner 内推dialog(scanner入口)" style="@style/DebugButton"/>
+            <Button android:id="@+id/show_ocr_dialog_btn" android:text="Scanner 内推dialog(ocr入口)" style="@style/DebugButton"/>
+            <LinearLayout style="@style/DebugFrame">
+                <RadioGroup android:orientation="horizontal" android:id="@+id/update_change" style="@style/DebugCheckbox">
+                    <RadioButton android:id="@+id/upgrade_planA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内置更新方案A" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/upgrade_planB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内置更新方案B" android:layout_weight="1"/>
+                </RadioGroup>
+                <Button android:id="@+id/upgrade_dialog_btn" android:text="内置更新弹窗" style="@style/DebugButton"/>
+            </LinearLayout>
+            <Button android:id="@+id/tools_guide_btn" android:text="Tools引导" style="@style/DebugButton"/>
+            <Button android:id="@+id/ask_btn" android:text="主动问询弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/widget_btn" android:text="小组件推荐弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/clear_default_btn" android:text="设置默认打开引导-清除设置弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/set_default_btn" android:text="设置默认打开方式问询弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/delete_btn" android:text="删除弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/thank_feedback_btn" android:text="感谢反馈" style="@style/DebugButton"/>
+            <Button android:id="@+id/permission_access_btn" android:text="Android11权限弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/permission_rationale_btn" android:text="Android10解释弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/permission_goToSet_btn" android:text="Android10去设置" style="@style/DebugButton"/>
+            <Button android:id="@+id/permission_guide_btn" android:text="权限页列表样式引导" style="@style/DebugButton"/>
+            <Button android:id="@+id/open_with_guide_a_btn" android:text="openWith引导-样式A" style="@style/DebugButton"/>
+            <Button android:id="@+id/open_with_guide_b_btn" android:text="openWith引导-样式B" style="@style/DebugButton"/>
+            <Button android:id="@+id/open_with_guide_c_btn" android:text="openWith引导-样式C" style="@style/DebugButton"/>
+            <Button android:id="@+id/memory_low1_btn" android:text="显示内存不足弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/memory_low2_btn" android:text="显示内存不足弹窗(无值)" style="@style/DebugButton"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_20" android:text="预览页弹窗" style="@style/DebugText"/>
+        <LinearLayout style="@style/DebugContainer">
+            <Button android:id="@+id/read_only_btn" android:text="只读文件提示弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/local_file_change_btn" android:text="本地文件被修改" style="@style/DebugButton"/>
+            <Button android:id="@+id/file_parse_fail_btn" android:text="预览页文件解析失败" style="@style/DebugButton"/>
+            <Button android:id="@+id/file_system_error_btn" android:text="预览页打开文件系统异常" style="@style/DebugButton"/>
+            <Button android:id="@+id/file_oom_error_btn" android:text="预览页打开文件oom" style="@style/DebugButton"/>
+            <Button android:id="@+id/preview_no_pdf_lock_btn" android:text="除PDF外的加密文件" style="@style/DebugButton"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_20" android:text="拆分合并弹窗" style="@style/DebugText"/>
+        <LinearLayout style="@style/DebugContainer">
+            <Button android:id="@+id/split_unKnow_error_btn" android:text="拆分文件未知异常" style="@style/DebugButton"/>
+            <Button android:id="@+id/split_oom_error_btn" android:text="拆分文件oom异常" style="@style/DebugButton"/>
+            <Button android:id="@+id/merge_unKnow_error_btn" android:text="合并文件未知异常" style="@style/DebugButton"/>
+            <Button android:id="@+id/merge_oom_error_btn" android:text="合并文件oom异常" style="@style/DebugButton"/>
+            <Button android:id="@+id/merge_split_rename_btn" android:text="合并-拆分重命名弹窗" style="@style/DebugButton"/>
+            <Button android:id="@+id/quit_merge_btn" android:text="退出合并" style="@style/DebugButton"/>
+            <Button android:id="@+id/quit_split_btn" android:text="退出拆分" style="@style/DebugButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

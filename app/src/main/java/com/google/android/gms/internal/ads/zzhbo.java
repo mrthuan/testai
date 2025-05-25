@@ -1,0 +1,63 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+/* loaded from: classes2.dex */
+public final class zzhbo extends zzgxy implements zzgzk {
+    private static final zzhbo zza;
+    private static volatile zzgzr zzb;
+    private zzgyk zzc = zzgxy.zzbK();
+
+    static {
+        zzhbo zzhboVar = new zzhbo();
+        zza = zzhboVar;
+        zzgxy.zzcb(zzhbo.class, zzhboVar);
+    }
+
+    private zzhbo() {
+    }
+
+    public static zzhbn zzc() {
+        return (zzhbn) zza.zzaZ();
+    }
+
+    public static /* synthetic */ void zze(zzhbo zzhboVar, zzhbm zzhbmVar) {
+        zzhbmVar.getClass();
+        zzgyk zzgykVar = zzhboVar.zzc;
+        if (!zzgykVar.zzc()) {
+            zzhboVar.zzc = zzgxy.zzbL(zzgykVar);
+        }
+        zzhboVar.zzc.add(zzhbmVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgxy
+    public final Object zzde(zzgxx zzgxxVar, Object obj, Object obj2) {
+        switch (zzgxxVar.ordinal()) {
+            case 0:
+                return (byte) 1;
+            case 1:
+                return null;
+            case 2:
+                return zzgxy.zzbS(zza, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001b", new Object[]{"zzc", zzhbm.class});
+            case 3:
+                return new zzhbo();
+            case 4:
+                return new zzhbn(null);
+            case 5:
+                return zza;
+            case 6:
+                zzgzr zzgzrVar = zzb;
+                if (zzgzrVar == null) {
+                    synchronized (zzhbo.class) {
+                        zzgzrVar = zzb;
+                        if (zzgzrVar == null) {
+                            zzgzrVar = new zzgxt(zza);
+                            zzb = zzgzrVar;
+                        }
+                    }
+                }
+                return zzgzrVar;
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
+}

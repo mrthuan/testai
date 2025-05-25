@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorPrimary" app:cardCornerRadius="@dimen/dp_8" app:cardElevation="0dp">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/lv_lottie" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_16" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"/>
+</androidx.cardview.widget.CardView>

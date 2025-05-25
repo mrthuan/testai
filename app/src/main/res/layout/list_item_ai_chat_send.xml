@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="end|center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_20" app:layout_constrainedWidth="true">
+        <pdf.pdfreader.viewer.editor.free.ui.widget.ProgressView android:id="@+id/send_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_8" app:img="@drawable/ic_ai_send_err_loading"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/send_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_8" app:srcCompat="@drawable/ic_ai_send_failed"/>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@+id/send_tv_msg" android:background="@drawable/bg_ai_chat_send_bubble" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingHorizontal="@dimen/dp_20" android:paddingVertical="@dimen/dp_12" style="@style/TextViewFont_RobotoRegular"/>
+    </LinearLayout>
+    <pdf.pdfreader.viewer.editor.free.feature.ai.widget.AIErrorRetryView android:id="@+id/send_ai_err_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_20"/>
+</LinearLayout>

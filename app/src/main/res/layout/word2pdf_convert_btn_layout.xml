@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/preview_convert_to_pdf_ll" android:background="@drawable/shape_round_29_red" android:paddingTop="@dimen/dp_14" android:paddingBottom="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@+id/preview_convert_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f1300d0" android:fontFamily="@font/roboto_bold"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/preview_convert_to_pdf_pro_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_6" app:srcCompat="@drawable/ic_home_subscription"/>
+    <pdf.pdfreader.viewer.editor.free.ui.widget.ProgressView android:id="@+id/preview_convert_to_pdf_progress" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:scaleType="center" android:layout_marginStart="@dimen/dp_6" app:img="@drawable/ic_convert_to_pdf_btn_loading"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:background="@drawable/bg_watermark" android:paddingLeft="@dimen/dp_6" android:paddingTop="@dimen/dp_4" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_6" android:paddingVertical="@dimen/dp_4">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivWatermark" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" app:srcCompat="@drawable/ic_home_pdf2"/>
+    <TextView android:textSize="@dimen/dp_9" android:textStyle="italic" android:textColor="@color/black" android:id="@+id/tvWatermark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All PDF Reader " android:includeFontPadding="true" android:layout_marginStart="@dimen/dp_4" style="@style/TextViewFont_RobotoMedium"/>
+</LinearLayout>

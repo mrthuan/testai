@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:paddingTop="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="@dimen/dp_84" android:paddingStart="@dimen/dp_4" android:paddingEnd="@dimen/dp_4">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/centerFl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <FrameLayout android:padding="0.5dp" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/dp_8" app:cardElevation="0dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgIv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/coverIv" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/centerFl" app:layout_constraintEnd_toEndOf="@+id/centerFl" app:layout_constraintStart_toStartOf="@+id/centerFl" app:layout_constraintTop_toTopOf="@+id/centerFl" app:srcCompat="@drawable/bg_convert_select_cover_frame"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/frameIv" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/centerFl" app:layout_constraintEnd_toEndOf="@+id/centerFl" app:layout_constraintStart_toStartOf="@+id/centerFl" app:layout_constraintTop_toTopOf="@+id/centerFl" app:srcCompat="@drawable/bg_convert_select_frame"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/removeIv" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/icon_img_convert_remove"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

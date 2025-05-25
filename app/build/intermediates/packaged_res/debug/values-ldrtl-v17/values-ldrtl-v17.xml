@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+    <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+    <integer name="gradient_angle">180</integer>
+    <integer name="ltr_gradient_angle_315">225</integer>
+    <integer name="rotation_1">-1</integer>
+    <integer name="rotation_2">-2</integer>
+    <integer name="scale_x">-1</integer>
+</resources>

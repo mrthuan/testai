@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textSize="@dimen/sp_16" android:textColor="@color/color_100_black_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_14" android:layout_marginStart="@dimen/dp_12" style="@style/TextViewFont_RobotoBold"/>

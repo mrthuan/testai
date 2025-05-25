@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/reflow_loading_iv" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" app:srcCompat="@drawable/ic_reflow_loading"/>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_100_black_white" android:gravity="center" android:id="@+id/tv_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/arg_res_0x7f1303a6" android:maxLines="1" style="@style/TextViewFont_RobotoMedium"/>
+</merge>

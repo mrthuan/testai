@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/dialog_layout" android:background="@drawable/bgdialog_dark_normal" android:layout_width="280dp" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/title_black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:text="@string/arg_res_0x7f130122" android:fontFamily="@string/arg_res_0x7f130432"/>
+        <RelativeLayout android:id="@+id/app_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="16dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:layout_below="@+id/title">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/app_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/app_icon" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitXY"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/app_icon">
+                    <TextView android:textSize="16sp" android:textColor="@color/name_black" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/arg_res_0x7f130433"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/download_black" android:id="@+id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:fontFamily="@string/arg_res_0x7f130430"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/rate_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/description_black" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/app_info_layout" android:fontFamily="@string/arg_res_0x7f130433"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/devide_line1" android:background="@color/devide_black" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/app_layout"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/promote_layout" android:background="@drawable/button_dark" android:layout_width="match_parent" android:layout_height="64dp" android:layout_below="@+id/devide_line1">
+            <TextView android:textSize="14sp" android:textColor="@color/button_black" android:gravity="center" android:id="@+id/btn_promote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:text="@string/arg_res_0x7f130174" android:drawableLeft="@drawable/icon_googleplay" android:drawablePadding="14dp" android:fontFamily="@string/arg_res_0x7f130432"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/devide_line2" android:background="@color/devide_black" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/promote_layout"/>
+        <TextView android:textSize="14sp" android:textColor="@color/button_black" android:gravity="center" android:id="@+id/btn_exit" android:background="@drawable/button_dark" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/arg_res_0x7f130000" android:layout_below="@+id/devide_line2" android:fontFamily="@string/arg_res_0x7f130432"/>
+    </RelativeLayout>
+</LinearLayout>

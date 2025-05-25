@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout style="@style/DebugContainer">
+        <Button android:id="@+id/unrecognized_image_skipped_gpt_btn" android:text="unrecognized_image_skipped_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/image_unavailable_gpt_btn" android:text="image_unavailable_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/btn_page_set_max_select" android:text="select_max_pages_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/extracting_page_gpt" android:text="extracting_page_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/downloading_needed_resources" android:text="downloading_needed_resources_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/gallery2_file_damaged" android:text="gallery2_file_damaged" style="@style/DebugButton"/>
+        <TextView android:gravity="start" android:text="widgets_home_screen_shorcuts:" style="@style/DebugButton"/>
+        <TextView android:textColor="#ff0000" android:gravity="start" android:text="@string/arg_res_0x7f130587" style="@style/DebugButton"/>
+        <TextView android:gravity="start" android:text="widgets_permission_needed_gpt:" style="@style/DebugButton"/>
+        <TextView android:textColor="#ff0000" android:gravity="start" android:id="@+id/widgets_permission_needed_gpt" android:text="@string/arg_res_0x7f130589" style="@style/DebugButton"/>
+        <TextView android:gravity="start" android:text="download_failed_des:" style="@style/DebugButton"/>
+        <TextView android:textColor="#ff0000" android:gravity="start" android:text="@string/arg_res_0x7f13010a" style="@style/DebugButton"/>
+        <TextView android:gravity="start" android:text="downloading_needed_resources_gpt:" style="@style/DebugButton"/>
+        <TextView android:textColor="#ff0000" android:gravity="start" android:text="@string/arg_res_0x7f13010b" style="@style/DebugButton"/>
+        <TextView android:gravity="start" android:text="to_save_image_need_storage_gpt:" style="@style/DebugButton"/>
+        <TextView android:textColor="#ff0000" android:gravity="start" android:text="@string/arg_res_0x7f1304d6" style="@style/DebugButton"/>
+        <TextView android:gravity="start" android:text="gallery2_file_damaged:" style="@style/DebugButton"/>
+        <TextView android:textColor="#ff0000" android:gravity="start" android:text="@string/arg_res_0x7f130172" style="@style/DebugButton"/>
+        <Button android:id="@+id/save_successfully" android:text="reader_save_successfully" style="@style/DebugButton"/>
+        <Button android:id="@+id/unable_to_share_gpt" android:text="unable_to_share_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/allplayer_server_error_retry_gpt" android:text="allplayer_server_error_retry_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/deleted_file_cannot_open_gpt" android:text="deleted_file_cannot_open_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/no_network_check_toast_gpt" android:text="no_network_check_toast_gpt" style="@style/DebugButton"/>
+        <Button android:id="@+id/already_copy" android:text="already_copy" style="@style/DebugButton"/>
+        <Button android:id="@+id/saving" android:text="@string/arg_res_0x7f13044f" style="@style/DebugButton"/>
+        <Button android:id="@+id/saveFiled" android:text="@string/arg_res_0x7f13044c" style="@style/DebugButton"/>
+        <Button android:id="@+id/camera_error_btn" android:text="camera_error" style="@style/DebugButton"/>
+        <Button android:id="@+id/restored_successfully_btn" android:text="restored_successfully" style="@style/DebugButton"/>
+        <Button android:id="@+id/already_sbuscribed_btn" android:text="already_sbuscribed" style="@style/DebugButton"/>
+        <Button android:id="@+id/subscribe_no_valid_btn" android:text="doc_no_valid" style="@style/DebugButton"/>
+        <Button android:id="@+id/subscribe_network_error_btn" android:text="network_error_pls_try" style="@style/DebugButton"/>
+        <Button android:id="@+id/subscribe_fail_btn" android:text="subscription_failed" style="@style/DebugButton"/>
+        <Button android:id="@+id/subscribe_success_btn" android:text="whatscan_subscribed_successfully" style="@style/DebugButton"/>
+        <Button android:id="@+id/merge_not_support_btn" android:text="reader_selected_files_unrecognized" style="@style/DebugButton"/>
+        <Button android:id="@+id/reader_x_btn" android:text="reader_x_item" style="@style/DebugButton"/>
+        <Button android:id="@+id/all_page_display_btn" android:text="all_pages_displayed" style="@style/DebugButton"/>
+        <Button android:id="@+id/parse_file_btn" android:text="ins_parsing_failed_title" style="@style/DebugButton"/>
+        <Button android:id="@+id/file_not_support_btn" android:text="reader_open_failed_des" style="@style/DebugButton"/>
+        <Button android:id="@+id/pdf_lock_fail_btn" android:text="pdf_reader2_password_set_failed" style="@style/DebugButton"/>
+        <Button android:id="@+id/pdf_unlock_fail_btn" android:text="pdf_reader2_password_remove_failed" style="@style/DebugButton"/>
+        <Button android:id="@+id/img_not_available_btn" android:text="this_image_not_available" style="@style/DebugButton"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

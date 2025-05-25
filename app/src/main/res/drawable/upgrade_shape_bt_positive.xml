@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/lib_upgrade_main_color">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_27"/>
+            <solid android:color="@color/lib_upgrade_main_color"/>
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dp_73">
+    <RelativeLayout android:id="@+id/native_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_73">
+        <FrameLayout android:id="@+id/ad_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_8" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/ad_icon_imageview" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:scaleType="fitXY"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ad_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <Button android:textSize="@dimen/sp_12" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/ad_action_button" android:background="@drawable/shape_round_23_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_64" android:minHeight="@dimen/dp_26" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" android:outlineProvider="none" style="@style/TextViewFont_RobotoBold"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/text_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" android:layout_toStartOf="@+id/ad_action_button" android:layout_toEndOf="@+id/ad_icon_layout">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/colorAdPrimaryText" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/ad_title_textview" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1" style="@style/TextViewFont_RobotoRegular"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/colorAdPrimaryText" android:ellipsize="end" android:id="@+id/ad_describe_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:maxLines="2" android:textAlignment="viewStart" style="@style/TextViewFont_RobotoRegular"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ad_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_native_banner_ad_dark" android:layout_alignParentBottom="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ad_choices_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/native_layout" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

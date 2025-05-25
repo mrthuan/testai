@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_4" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15">
+    <FrameLayout android:id="@+id/centerFl" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintDimensionRatio="142:196" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <FrameLayout android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/dp_8" app:cardElevation="0dp">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/pageIv" android:background="@drawable/bg_convert_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+        <View android:background="@drawable/bg_convert_select_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/removeIv" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_marginTop="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" app:cardBackgroundColor="@color/no_color" app:cardCornerRadius="@dimen/dp_11" app:layout_constraintEnd_toEndOf="@+id/centerFl" app:layout_constraintTop_toTopOf="@+id/centerFl">
+        <eightbitlab.com.blurview.BlurView android:id="@+id/blurView" android:layout_width="match_parent" android:layout_height="match_parent" app:blurOverlayColor="#00000000">
+            <androidx.appcompat.widget.AppCompatImageView android:background="#99232528" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@drawable/icon_img_convert_drag_remove"/>
+        </eightbitlab.com.blurview.BlurView>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:id="@+id/pageIndexLl" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/centerFl" app:layout_constraintStart_toStartOf="@+id/centerFl" app:layout_constraintTop_toBottomOf="@+id/centerFl">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/color_61626C_9798A2" android:gravity="center" android:id="@+id/pageIndex" android:paddingTop="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6" style="@style/TextViewFont_RobotoMedium"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/progressFl" android:background="@drawable/bg_convert_item_loading" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/centerFl" app:layout_constraintEnd_toEndOf="@+id/centerFl" app:layout_constraintStart_toStartOf="@+id/centerFl" app:layout_constraintTop_toTopOf="@+id/centerFl">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="@dimen/dp_38" android:layout_height="@dimen/dp_38" android:indeterminateOnly="true" android:indeterminateTint="#92939d"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

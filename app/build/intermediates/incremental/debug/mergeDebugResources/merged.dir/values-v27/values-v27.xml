@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@style/Base.v27.Theme.SplashScreen">
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.v27.Theme.SplashScreen.Light">
+    </style>
+    <style name="Base.v27.Theme.SplashScreen" parent="@style/Base.v21.Theme.SplashScreen">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Base.v27.Theme.SplashScreen.Light" parent="@style/Base.v21.Theme.SplashScreen.Light">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="BaseBottomDialog" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryOld</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">@bool/barColorStatues</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimaryOld</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="DarkBottomDialog" parent="@style/BaseBottomDialog">
+        <item name="android:navigationBarColor">#1c1f28</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

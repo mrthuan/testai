@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_notify_all_files" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="2dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notify_home_allfiles"/>
+        <TextView android:textSize="11sp" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_notify_all_files" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/arg_res_0x7f130367" android:lines="1" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Info"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_notify_recent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="2dp" android:layout_marginEnd="2dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notify_home_recent"/>
+        <TextView android:textSize="11sp" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_notify_recent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/arg_res_0x7f130418" android:lines="1" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Info"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_notify_bookmark" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="2dp" android:layout_marginEnd="2dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notify_home_mark"/>
+        <TextView android:textSize="11sp" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_notify_bookmark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/arg_res_0x7f13036f" android:lines="1" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Info"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_notify_tools" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="2dp" android:layout_marginEnd="2dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notify_home_tools"/>
+        <TextView android:textSize="11sp" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_notify_tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/arg_res_0x7f1304d7" android:lines="1" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Info"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_notify_search" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="2dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notify_home_search"/>
+        <TextView android:textSize="11sp" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_notify_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/arg_res_0x7f1303e6" android:lines="1" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Info"/>
+    </LinearLayout>
+</LinearLayout>

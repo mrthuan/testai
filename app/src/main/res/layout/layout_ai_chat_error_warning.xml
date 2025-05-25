@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ai_file_ll_upload_file_err_container" android:background="@drawable/bg_ai_upload_err_warning" android:paddingTop="@dimen/dp_14" android:paddingBottom="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textColor="@color/color_100_black_white" android:id="@+id/ai_file_tv_upload_file_err_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arg_res_0x7f1302dd" style="@style/TextViewFont_RobotoRegular"/>
+        <TextView android:textColor="@color/color_100_DD202A" android:gravity="center" android:layout_gravity="end" android:id="@+id/ai_file_tv_upload_file_err_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:text="@string/arg_res_0x7f130428" android:includeFontPadding="false" android:drawablePadding="@dimen/dp_5" app:drawableStartCompat="@drawable/ic_rotate_loading_13" style="@style/TextViewFont_RobotoMedium"/>
+    </LinearLayout>
+</merge>

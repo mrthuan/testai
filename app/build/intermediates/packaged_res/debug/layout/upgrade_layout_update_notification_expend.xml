@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="5dp">
+    <TextView android:textSize="19sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/readyTv" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/arg_res_0x7f1301e0" android:includeFontPadding="false" style="@style/TextAppearance.Compat.Notification.Title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/lib_upgrade_white" android:gravity="center" android:id="@+id/installTv" android:background="@drawable/upgrade_shape_corner_blue" android:layout_width="match_parent" android:layout_height="41dp" android:text="@string/arg_res_0x7f1301d7" style="@style/font_bold"/>
+    </FrameLayout>
+</LinearLayout>

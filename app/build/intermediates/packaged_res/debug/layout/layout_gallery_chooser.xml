@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootFl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/bg_popu_pdf_select_foder" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <pdf.pdfreader.viewer.editor.free.ui.widget.MaxHeightRecycleview android:id="@+id/galleryRv" android:paddingBottom="@dimen/dp_10" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </FrameLayout>
+</FrameLayout>

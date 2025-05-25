@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout style="@style/DebugContainer">
+        <Button android:id="@+id/language_recall_btn" android:text="语言选择页召回通知" style="@style/DebugButton"/>
+        <Button android:id="@+id/upgrade_btn" android:text="内置更新通知" style="@style/DebugButton"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/new_file_switch" android:text="新增文件通知" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/new_file_silent_switch" android:text="新增文件通知（静默）" style="@style/DebugCheckbox"/>
+            <Button android:id="@+id/new_file_btn" android:text="新增文件通知" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/not_finished_switch" android:text="未完成阅读文件通知" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/not_finished_silent_switch" android:text="未完成阅读文件通知（静默）" style="@style/DebugCheckbox"/>
+            <TextView android:text="未完成阅读文件通知定时" style="@style/DebugText"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/not_finished_hour_et" android:layout_width="0dp" android:hint="默认19点" android:layout_weight="1" android:inputType="numberDecimal" android:layout_marginEnd="@dimen/dp_5" style="@style/DebugEditText"/>
+                <TextView android:textSize="@dimen/sp_16" android:layout_width="wrap_content" android:text=":" style="@style/DebugView"/>
+                <EditText android:id="@+id/not_finished_min_et" android:layout_width="0dp" android:hint="默认0分" android:layout_weight="1" android:inputType="numberDecimal" android:layout_marginStart="@dimen/dp_5" style="@style/DebugEditText"/>
+            </LinearLayout>
+            <Button android:id="@+id/not_finished_ok_btn" android:text="设置" style="@style/DebugButton"/>
+            <Button android:id="@+id/not_finished_btn" android:text="未完成阅读文件通知" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/not_view_switch" android:text="未查看新增文件通知" style="@style/DebugCheckbox"/>
+            <CheckBox android:id="@+id/not_view_silent_switch" android:text="未查看新增文件通知（静默）" style="@style/DebugCheckbox"/>
+            <TextView android:text="未查看新增文件通知" style="@style/DebugText"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/not_view_hour_et" android:layout_width="0dp" android:hint="默认19点" android:layout_weight="1" android:inputType="numberDecimal" android:layout_marginEnd="@dimen/dp_5" style="@style/DebugEditText"/>
+                <TextView android:textSize="@dimen/sp_16" android:layout_width="wrap_content" android:text=":" style="@style/DebugView"/>
+                <EditText android:id="@+id/not_view_min_et" android:layout_width="0dp" android:hint="默认0分" android:layout_weight="1" android:inputType="numberDecimal" android:layout_marginStart="@dimen/dp_5" style="@style/DebugEditText"/>
+            </LinearLayout>
+            <Button android:id="@+id/not_view_ok_btn" android:text="设置" style="@style/DebugButton"/>
+            <Button android:id="@+id/not_view_btn" android:text="未查看新增文件通知" style="@style/DebugButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/open_app_permanent_switch" android:text="常驻通知" style="@style/DebugCheckbox"/>
+            <Button android:id="@+id/open_app_permanent_btn" android:text="常驻通知" style="@style/DebugButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

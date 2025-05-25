@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_72" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4" android:layout_marginHorizontal="@dimen/dp_4">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.5dp" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="0dp">
+        <FrameLayout android:id="@+id/content_fl" android:background="@color/color_100_f3f3f5_1d1f22" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/picture_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/filter_name_tv" android:background="@drawable/selector_image_adjust_filters_tv_bg" android:paddingLeft="@dimen/dp_2" android:paddingRight="@dimen/dp_2" android:layout_width="match_parent" android:layout_height="@dimen/dp_20" android:lines="1" android:paddingHorizontal="@dimen/dp_2" app:autoSizeMaxTextSize="@dimen/sp_12" app:autoSizeMinTextSize="@dimen/sp_10" app:autoSizeTextType="uniform"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:id="@+id/content_mask_view" android:background="@drawable/selector_image_adjust_filters_rv_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

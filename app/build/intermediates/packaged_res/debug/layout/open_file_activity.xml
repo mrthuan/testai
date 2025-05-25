@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/button1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="open DOC   /storage/emulated/0/DOC.doc"/>
+    <Button android:id="@+id/button2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="open TXT  /storage/emulated/0/TXT.txt"/>
+    <Button android:id="@+id/button3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="open EXCEL  /storage/emulated/0/EXCEL.xlsx"/>
+    <Button android:id="@+id/button4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="open PPT  /storage/emulated/0/PPT.pptx"/>
+</LinearLayout>

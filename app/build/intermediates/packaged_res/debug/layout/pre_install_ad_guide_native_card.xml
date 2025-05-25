@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorPrimaryOld" app:cardCornerRadius="@dimen/dp_8" app:cardElevation="0dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llAdRoot" android:paddingBottom="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:id="@+id/ad_action_button" android:background="@drawable/shape_round_13_orange" android:layout_width="match_parent" android:layout_height="@dimen/dp_46" android:layout_marginTop="@dimen/dp_14" android:minHeight="@dimen/dp_44" android:textAllCaps="true" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" android:outlineProvider="none" style="@style/TextViewFont_RobotoMedium"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ad_des_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+                <RelativeLayout android:id="@+id/ad_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ad_icon_imageview" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ad_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/colorAdPrimaryText" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/ad_title_textview" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" style="@style/TextViewFont_RobotoRegular"/>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lang_native_card_ad" android:layout_marginStart="@dimen/dp_4"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/colorAdPrimaryText" android:ellipsize="end" android:id="@+id/ad_describe_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:maxLines="2" android:textAlignment="viewStart" style="@style/TextViewFont_RobotoRegular"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/ad_native_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+            <RelativeLayout android:id="@+id/ad_cover_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ad_cover_imageview" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ad_cover_mediaview" android:layout_width="@dimen/dp_220" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ad_choices_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

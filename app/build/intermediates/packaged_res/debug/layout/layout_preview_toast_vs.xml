@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/toast_bg" android:background="@drawable/shape_style_toast" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" android:layout_marginStart="@dimen/dp_50" android:layout_marginEnd="@dimen/dp_50">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/toast_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" android:layout_marginEnd="@dimen/dp_6"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@+id/toast_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/TextViewFont_RobotoMedium"/>
+    </LinearLayout>
+</FrameLayout>

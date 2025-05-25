@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/widget_paddingHorizontal" android:paddingRight="@dimen/widget_paddingHorizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/widget_paddingHorizontal">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/widget_large_pdf_editor" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_widget_single_edit_pdf_large"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/arg_res_0x7f130304" android:textAlignment="viewStart" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_53" app:layout_constraintEnd_toEndOf="@+id/widget_large_pdf_editor" app:layout_constraintStart_toStartOf="@+id/widget_large_pdf_editor" app:layout_constraintTop_toTopOf="@+id/widget_large_pdf_editor" style="@style/TextViewFont_RobotoBold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="90"/>
+</LinearLayout>

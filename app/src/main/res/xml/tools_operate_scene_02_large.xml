@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition android:id="@+id/transition_scene" app:constraintSetEnd="@+id/end" app:constraintSetStart="@+id/start" app:duration="1500">
+        <KeyFrameSet>
+            <KeyPosition app:framePosition="30" app:keyPositionType="deltaRelative" app:motionTarget="@+id/fileContainerView" app:percentHeight="1" app:percentY="1"/>
+            <KeyAttribute android:alpha="1" app:framePosition="30" app:motionTarget="@+id/fileContainerView"/>
+            <KeyPosition app:framePosition="40" app:keyPositionType="deltaRelative" app:motionTarget="@+id/operateRv" app:percentY="1"/>
+            <KeyAttribute android:alpha="1" app:framePosition="40" app:motionTarget="@+id/operateRv"/>
+            <KeyPosition app:framePosition="50" app:keyPositionType="deltaRelative" app:motionTarget="@+id/operateOpenLy" app:percentY="1"/>
+            <KeyAttribute android:alpha="1" app:framePosition="50" app:motionTarget="@+id/operateOpenLy"/>
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/guideCenter"/>
+        <Constraint android:id="@+id/view_tools_status_bar_02"/>
+        <Constraint android:id="@+id/ivTopBg"/>
+        <Constraint android:id="@+id/operateCloseImg"/>
+        <Constraint android:id="@+id/lyToast"/>
+        <Constraint android:id="@+id/lyTitleTips"/>
+        <Constraint android:id="@+id/doneAnimView"/>
+        <Constraint android:id="@+id/fileContainerView" android:layout_width="0dp" android:layout_height="0dp" android:alpha="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="0"/>
+        <Constraint android:id="@+id/operateRv" android:layout_width="0dp" android:layout_height="wrap_content" android:overScrollMode="never" android:alpha="0" app:layout_constraintBottom_toTopOf="@+id/operateOpenLy" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="0" app:layout_constraintVertical_bias="1" app:layout_constraintVertical_chainStyle="packed"/>
+        <Constraint android:id="@+id/operateOpenLy" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_20" android:alpha="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/operateRv"/>
+        <Constraint android:id="@+id/rvRuler"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/guideCenter"/>
+        <Constraint android:id="@+id/view_tools_status_bar_02"/>
+        <Constraint android:id="@+id/ivTopBg"/>
+        <Constraint android:id="@+id/operateCloseImg"/>
+        <Constraint android:id="@+id/lyToast"/>
+        <Constraint android:id="@+id/lyTitleTips"/>
+        <Constraint android:id="@+id/doneAnimView"/>
+        <Constraint android:id="@+id/fileContainerView" android:layout_width="0dp" android:layout_height="0dp" android:alpha="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/barrier"/>
+        <Constraint android:id="@+id/operateRv" android:layout_width="0dp" android:layout_height="wrap_content" android:overScrollMode="never" android:alpha="1" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/operateOpenLy" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/barrier" app:layout_constraintVertical_bias="0" app:layout_constraintVertical_chainStyle="packed"/>
+        <Constraint android:id="@+id/operateOpenLy" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_20" android:alpha="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/operateRv"/>
+        <Constraint android:id="@+id/rvRuler"/>
+    </ConstraintSet>
+</MotionScene>

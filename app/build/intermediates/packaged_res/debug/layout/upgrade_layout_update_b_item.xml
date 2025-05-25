@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/sp_16" android:textColor="@color/lib_upgrade_text_color" android:id="@+id/tv_fix_B" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:textAlignment="viewStart" style="@style/font_medium"/>

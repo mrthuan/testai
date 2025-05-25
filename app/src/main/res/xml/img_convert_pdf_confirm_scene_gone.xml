@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition app:constraintSetEnd="@+id/end" app:constraintSetStart="@+id/start" app:duration="500"/>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/view_status_bar"/>
+        <Constraint android:id="@+id/toolBarBg"/>
+        <Constraint android:id="@+id/top_line"/>
+        <Constraint android:id="@+id/backImg"/>
+        <Constraint android:id="@+id/titleTv"/>
+        <Constraint android:id="@+id/addIv"/>
+        <Constraint android:id="@+id/tipsLl" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolBarBg">
+            <PropertySet android:alpha="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/galleryRv"/>
+        <Constraint android:id="@+id/continueFl"/>
+        <Constraint android:id="@+id/containerFl"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end" app:deriveConstraintsFrom="@+id/start"/>
+</MotionScene>
