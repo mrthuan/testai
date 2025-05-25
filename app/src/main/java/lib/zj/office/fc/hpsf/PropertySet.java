@@ -143,7 +143,13 @@ public class PropertySet {
     }
 
     public int hashCode() {
-        throw new UnsupportedOperationException("FIXME: Not yet implemented.");
+        int result = getByteOrder();
+        result = (31 * result) + getClassID().hashCode();
+        result = (31 * result) + getFormat();
+        result = (31 * result) + getOSVersion();
+        List sections = getSections();
+        result = (31 * result) + (sections != null ? sections.hashCode() : 0);
+        return result;
     }
 
     public boolean isDocumentSummaryInformation() {
