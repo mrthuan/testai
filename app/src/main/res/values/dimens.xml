@@ -1548,4 +1548,10 @@
     <dimen name="ucrop_width_horizontal_wheel_progress_line">1dp</dimen>
     <dimen name="ucrop_width_middle_wheel_progress_line">2dp</dimen>
     <dimen name="widget_paddingHorizontal">@dimen/dp_12</dimen>
+    <dimen name="dp_179">179dp</dimen>
+    <dimen name="dp_336">336dp</dimen>
+    <dimen name="dp_353">353dp</dimen>
+    <dimen name="dp_36_8421">36.8421dp</dimen>
+    <dimen name="dp_375">375dp</dimen>
+    <dimen name="dp_38_75">38.75dp</dimen>
 </resources>
